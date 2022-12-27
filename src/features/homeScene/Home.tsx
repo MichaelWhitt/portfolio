@@ -1,8 +1,7 @@
 import * as THREE from 'three'
-import moon from '../../assets/Carbon_normal.png'
+import carbon from '../../assets/Carbon_normal.png'
 
 const Home = () => {
-// === THREE.JS CODE START ===
 
     var scene = new THREE.Scene();
     
@@ -11,8 +10,8 @@ const Home = () => {
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement);
     const geometry = new THREE.TorusGeometry( 10, 2, 2, 6 );
-    const moonTexture = new THREE.TextureLoader().load(moon)
-    const material = new THREE.MeshBasicMaterial( { map: moonTexture } );
+    const texture = new THREE.TextureLoader().load(carbon)
+    const material = new THREE.MeshBasicMaterial( { map: texture } );
     const torus = new THREE.Mesh( geometry, material );
     scene.add( torus );
     camera.position.z = 50;
@@ -31,7 +30,7 @@ const Home = () => {
     
     animate();
 
-    const spin = (direction) => {
+    const spin = (direction: string) => {
         let interval = 150
         for (let i = 0; i < 4; i++){
             setTimeout(() => {
@@ -39,10 +38,6 @@ const Home = () => {
             }, interval * i)
         }
     }
-
-
-
-// === THREE.JS EXAMPLE CODE END ===
 
 const btnStyle = {marginRight: 5, background: '#9fa', color: '#313131', fontWeight: 700}
     return(
