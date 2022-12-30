@@ -42,10 +42,11 @@ const Stacker = () => {
 
     return(
         <div id='stackParent'>
-            <div id='stack0' className='stackItem'>{stack[0]}</div>
-            <div id='stack1' className='stackItem'>{stack[1]}</div>
-            <div id='stack2' className='stackItem'>{stack[2]}</div>
-            <div id='stack3' className='stackItem'>{stack[3]}</div>
+            {stack.map((stackItem, i) => (
+                <div id={`stack${i}`} className='stackItem'>
+                    {stackItem}
+                </div>
+            ))}
         </div>
     )
 }
