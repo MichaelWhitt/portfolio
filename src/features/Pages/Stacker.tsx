@@ -40,8 +40,6 @@ const Stacker = () => {
         setStack(arrayOfComponents)
     }, [])
 
-
-
     return(
         <div id='stackParent'>
             <div id='stack0' className='stackItem'>{stack[0]}</div>
