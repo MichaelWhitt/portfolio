@@ -1,6 +1,5 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
 const Landing = (props) => {
-    console.log(props.stack)
 
     return(
         <>
