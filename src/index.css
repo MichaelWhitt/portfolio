@@ -13,17 +13,17 @@ body {
 }
 
 #stack0 {
-  width: 85%;
+  width: 88%;
   z-index: 4000;
 }
 
 #stack1 {
-  width: 90%;
+  width: 92%;
   z-index: 3000;
 }
 
 #stack2 {
-  width: 95%;
+  width: 96%;
   z-index: 2000;
 }
 
@@ -41,10 +41,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.edgeButton {
-  /* transform: rotate(90deg); */
 }
 
 #nav {
