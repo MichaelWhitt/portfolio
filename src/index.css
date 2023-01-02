@@ -13,7 +13,7 @@ body {
 }
 
 .animate-true {
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
 }
 
 #stack0 {
@@ -71,17 +71,17 @@ body {
 }
 
 #landing {
-  background: #54f0c8
+  background: #72FFFF
 }
 
 #projects {
-  background: orange
+  background: #00D7FF
 }
 
 #about {
-  background: blueviolet
+  background: #0096FF
 }
 
 #contact {
-  background: pink;
+  background: #5800FF
 }
