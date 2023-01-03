@@ -12,14 +12,19 @@ body {
   height: 100vh;
 }
 
-.animate-true {
-  /* transform: translateX(-100%); */
+.animate-start {
+  transform: translateX(-100%);
+}
+
+.animate-done {
+  transition: none !important
 }
 
 #stack0 {
   width: 88%;
   z-index: 4000;
-  transition: transform 0.5s;
+  transition: transform;
+  transition-duration: 1s;
 }
 
 #stack1 {

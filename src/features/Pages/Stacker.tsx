@@ -4,11 +4,17 @@ import Contact from "./Contact/Contact"
 import About from "./About/About"
 import Projects from "./Projects/Projects"
 const Stacker = () => {
+    // const ref = useRef([])
     const [stack, setStack] = useState<React.ReactElement[]>([])
-    const [animate, setAnimate] = useState(false)
+    const [animate, setAnimate] = useState('none')
+
+    // useEffect(() => {
+    //     ref.current = stack // cache current value for the next render
+    //   })
+      //const prevValue = ref.current; // get prev value from last render
 
     const manipulateStack = (current: string) => {
-        setAnimate(s => true)
+        setAnimate('start')
         
         const l = <Landing changeOrder={manipulateStack} stack={stack} /> //change this, dry code
         const p = <Projects changeOrder={manipulateStack} stack={stack} />
@@ -16,17 +22,29 @@ const Stacker = () => {
         const c = <Contact changeOrder={manipulateStack} stack={stack} />
         
         switch(current) {
-            case 'Landing': 
-                setStack([l, p, a, c])
+            case 'Landing':
+                setTimeout(() => {
+                    setAnimate('done')
+                    setStack([l, p, a, c])
+                }, 1000)
                 return
             case 'Projects':
-                setStack([p, a, c, l])
+                setTimeout(() =>{
+                    setAnimate('done')
+                    setStack([p, a, c, l])
+                }, 1000)
                 return
             case 'About':
-                setStack([a, c, l, p])
+                setTimeout(() => {
+                    setAnimate('done')
+                    setStack([a, c, l, p])
+                }, 1000)
                 return
             case 'Contact':
-                setStack([c, l, p, a])
+                setTimeout(() => {
+                    setAnimate('done')
+                    setStack([c, l, p, a])
+                }, 1000)
                 return
         }
     }
@@ -38,7 +56,6 @@ const Stacker = () => {
         <Contact changeOrder={manipulateStack} stack={stack} />
     ]
 
-
     useEffect(() => {
         setStack(arrayOfComponents)
     }, [])
@@ -46,7 +63,7 @@ const Stacker = () => {
     return(
         <div id='stackParent'>
             {stack.map((stackItem, i) => (
-                <div id={`stack${i}`} className={`stackItem animate-${stack[0] ? animate : null}`} key={i}>
+                <div id={`stack${i}`} className={`stackItem animate-${stackItem === stack[0] ? animate : 'none'}`} key={i}>
                     {stackItem}
                 </div>
             ))}
