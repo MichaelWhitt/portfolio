@@ -4,7 +4,7 @@ const generateEdgeBtnTitle = (title = 'title') => {
         <>
         {title.split('').map((item, idx) => {
             return(
-                <div key={idx}>{item}</div>
+                <div key={idx} className='dosis'>{item.toUpperCase()}</div>
             )
         })}
         </>
