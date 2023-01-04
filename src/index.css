@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   background: #232323;
+  font-family: 'Saira', sans-serif;
+  font-size: 20px;
 }
 
 .edgeContainer {
@@ -19,6 +21,7 @@ body {
   font-size: 20px;
   padding-top: 20px;
   font-weight: 600;
+  font-family: 'Teko'
 }
 
 .edgeContainer:hover {
@@ -49,27 +52,18 @@ body {
 }
 
 #landing {
-  background: #72FFFF;
+  background: #0A2647;
   width: 88%;
   z-index: 4000;
 }
 
 #landing-content {
-
-}
-
-#projects {
-  background: #20a1fe;
-  width: 96%;
-  z-index: 2000;
-}
-
-#projects-content {
-  padding-left: 8%
+  width: 100%;
+  padding: 5%;
 }
 
 #xp {
-  background: #00D7FF;
+  background: #144272;
   width: 92%;
   z-index: 3000;
 }
@@ -78,8 +72,18 @@ body {
   padding-left: 4%
 }
 
+#projects {
+  background: #205295;
+  width: 96%;
+  z-index: 2000;
+}
+
+#projects-content {
+  padding-left: 8%
+}
+
 #contact {
-  background: #5180f7;
+  background: #2C74B3;
   width: 100%;
   z-index: 1000;
 }
@@ -88,6 +92,10 @@ body {
   padding-left: 12%
 }
 
-.dosis {
-  font-family: 'Dosis', sans-serif;
+.teko {
+  font-family: 'Teko', sans-serif;
+}
+
+.saira {
+  font-family: 'Saira', sans-serif;
 }
