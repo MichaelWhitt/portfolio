@@ -14,7 +14,7 @@ const About = (props) => {
                 <div 
                     className='edgeContainer' 
                     onClick={() => props.handleSlide('third')}
-                    style={props.activePage ==='third' || props.slide.third ? {justifyContent: 'flex-end', paddingBottom: 40} : {}}
+                    style={props.activePage ==='third' ? {fontWeight: 800, fontSize: 28} : {}}
                 >
                     {generateEdgeBtnTitle('ABOUT')}
                 </div>

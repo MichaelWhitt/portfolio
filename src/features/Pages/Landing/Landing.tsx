@@ -14,7 +14,7 @@ const Landing = (props) => {
                 <div 
                     className='edgeContainer' 
                     onClick={() => props.handleSlide('first')} 
-                    style={props.activePage ==='first' || props.slide.first ? {justifyContent: 'flex-end', paddingBottom: 40} : {}}
+                    style={props.activePage ==='first' ? {fontWeight: 800, fontSize: 28} : {}}
                 >
                     {generateEdgeBtnTitle('Landing')}
                 </div>
