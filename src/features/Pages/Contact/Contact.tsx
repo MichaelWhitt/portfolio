@@ -10,7 +10,7 @@ const Contact = (props) => {
                 <div 
                     className='edgeContainer' 
                     onClick={() => props.handleSlide('fourth')}
-                    style={props.activePage ==='fourth' ? {fontWeight: 800, fontSize: 28} : {}}
+                    style={props.activePage ==='fourth' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
                     {generateEdgeBtnTitle('CONTACT')}
                 </div>
