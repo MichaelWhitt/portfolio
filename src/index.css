@@ -59,23 +59,23 @@ body {
 }
 
 #projects {
-  background: #00D7FF;
-  width: 92%;
-  z-index: 3000;
-}
-
-#projects-content {
-  padding-left: 4%
-}
-
-#about {
   background: #20a1fe;
   width: 96%;
   z-index: 2000;
 }
 
-#about-content {
+#projects-content {
   padding-left: 8%
+}
+
+#xp {
+  background: #00D7FF;
+  width: 92%;
+  z-index: 3000;
+}
+
+#xp-content {
+  padding-left: 4%
 }
 
 #contact {

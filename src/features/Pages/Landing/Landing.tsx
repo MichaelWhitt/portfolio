@@ -19,7 +19,7 @@ const Landing = (props) => {
                     onClick={() => props.handleSlide('first')} 
                     style={props.activePage ==='first' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
-                    {generateEdgeBtnTitle('Landing')}
+                    {generateEdgeBtnTitle('Hello')}
                 </div>
             </div>
         </>

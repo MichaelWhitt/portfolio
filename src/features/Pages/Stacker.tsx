@@ -1,11 +1,9 @@
-import {useState, useEffect, useRef} from 'react'
+import {useState} from 'react'
 import Landing from "./Landing/Landing"
 import Contact from "./Contact/Contact"
-import About from "./About/About"
+import Experience from "./Experience/Experience"
 import Projects from "./Projects/Projects"
 const Stacker = () => {
-    // const ref = useRef([])
-    const [animate, setAnimate] = useState('none')
     const [slide, setSlide] = useState({
         first: false,
         second: false,
@@ -22,7 +20,6 @@ const Stacker = () => {
                     slide.first ? setSlide({...slide, first: false, second: false, third: false}) : setSlide({...slide})
                     return
                 case 'second': 
-                console.log('s')
                     slide.second ? setSlide({...slide, second: false, third: false}) : setSlide({...slide, first: true})
                     return
                 case 'third': 
@@ -32,13 +29,12 @@ const Stacker = () => {
                     setSlide({first: true, second: true, third: true})
             }
     }
-    console.log(activePage)
 
     return(
         <div id='stackParent'>
             <Landing slide={slide} handleSlide={handleSlide} activePage={activePage} />
+            <Experience slide={slide} handleSlide={handleSlide} activePage={activePage} />
             <Projects slide={slide} handleSlide={handleSlide} activePage={activePage} />
-            <About slide={slide} handleSlide={handleSlide} activePage={activePage} />
             <Contact slide={slide} handleSlide={handleSlide} activePage={activePage} />
         </div>
     )

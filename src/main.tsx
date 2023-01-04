@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Landing from './features/Pages/Landing/Landing'
 import Projects from './features/Pages/Projects/Projects'
-import About from './features/Pages/About/About'
+import About from './features/Pages/Experience/Experience'
 import Contact from './features/Pages/Contact/Contact'
 import Stacker from './features/Pages/Stacker';
 
