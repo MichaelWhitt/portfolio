@@ -10,7 +10,10 @@ const Projects = (props) => {
                     transition: 'transform 300ms ease-in-out .3s',
                     transform: props.slide.second ? 'translateX(-92%)' : 'translateX(0%)'
                 }}
-            >   
+            >
+                <div id='projects-content'>
+                    stuff goes in here
+                </div>
                 <div 
                     className='edgeContainer' 
                     onClick={() => props.handleSlide('second')}

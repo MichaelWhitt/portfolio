@@ -7,6 +7,10 @@ const Contact = (props) => {
                 id='contact' 
                 className='page'
             >   
+                <div id='contact-content'>
+                        stuff goes in here
+                </div>
+                
                 <div 
                     className='edgeContainer' 
                     onClick={() => props.handleSlide('fourth')}

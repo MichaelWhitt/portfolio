@@ -10,7 +10,10 @@ const Landing = (props) => {
                     transition: props.slide.first ? 'transform 300ms ease-in-out .1s' : 'transform 300ms ease-in-out .5s',
                     transform: props.slide.first ? 'translateX(-96%)' : 'translateX(0%)'
                 }}
-            >   
+            > 
+                <div id='landing-content'>
+                        stuff goes in here
+                </div>
                 <div 
                     className='edgeContainer' 
                     onClick={() => props.handleSlide('first')} 

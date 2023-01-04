@@ -45,8 +45,6 @@ body {
   height: 100vh;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
 }
 
@@ -56,10 +54,18 @@ body {
   z-index: 4000;
 }
 
+#landing-content {
+
+}
+
 #projects {
   background: #00D7FF;
   width: 92%;
   z-index: 3000;
+}
+
+#projects-content {
+  padding-left: 4%
 }
 
 #about {
@@ -68,10 +74,18 @@ body {
   z-index: 2000;
 }
 
+#about-content {
+  padding-left: 8%
+}
+
 #contact {
-  background: #7252ff;
+  background: #5180f7;
   width: 100%;
   z-index: 1000;
+}
+
+#contact-content {
+  padding-left: 12%
 }
 
 .dosis {

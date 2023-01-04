@@ -11,6 +11,10 @@ const About = (props) => {
                     transform: props.slide.third ? 'translateX(-88%)' : 'translateX(0%)'
                 }}
             >   
+                <div id='about-content'>
+                        stuff goes in here
+                </div>
+                
                 <div 
                     className='edgeContainer' 
                     onClick={() => props.handleSlide('third')}
