@@ -7,34 +7,6 @@ body {
   background: #232323;
 }
 
-.animate-start {
-  transform: translateX(-100%);
-}
-
-.animate-done {
-  transition: none !important
-}
-
-#stack0 {
-  width: 88%;
-  z-index: 4000;
-}
-
-#stack1 {
-  width: 92%;
-  z-index: 3000;
-}
-
-#stack2 {
-  width: 96%;
-  z-index: 2000;
-}
-
-#stack3 {
-  width: 100%;
-  z-index: 1000;
-}
-
 .edgeContainer {
   position: absolute;
   height: 100vh;
@@ -80,25 +52,25 @@ body {
 
 #landing {
   background: #72FFFF;
-  width: 88% !important;
+  width: 88%;
   z-index: 4000;
 }
 
 #projects {
   background: #00D7FF;
-  width: 92% !important;
+  width: 92%;
   z-index: 3000;
 }
 
 #about {
-  background: #0096FF;
-  width: 96% !important;
+  background: #20a1fe;
+  width: 96%;
   z-index: 2000;
 }
 
 #contact {
-  background: #5800FF;
-  width: 100% !important;
+  background: #7252ff;
+  width: 100%;
   z-index: 1000;
 }
 
