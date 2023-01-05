@@ -51,6 +51,15 @@ body {
   position: absolute;
 }
 
+.navIcon {
+  transition-duration: .5s;
+}
+
+.navIcon:hover {
+  transform: translateY(-10px);
+  transition-duration: .5s;
+}
+
 #landing {
   background: #0A2647;
   width: 88%;
