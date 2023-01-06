@@ -12,9 +12,7 @@ const Stacker = () => {
     const [activePage, setActivePage] = useState('first')
 
     const handleSlide = (position) => {
-
             setActivePage(position)
-
             switch(position) {
                 case 'first': 
                     slide.first ? setSlide({...slide, first: false, second: false, third: false}) : setSlide({...slide})

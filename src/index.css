@@ -53,11 +53,15 @@ body {
 
 .navIcon {
   transition-duration: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navIcon:hover {
-  transform: translateY(-10px);
+  transform: translateY(-6px);
   transition-duration: .5s;
+  cursor: pointer;
 }
 
 #landing {
