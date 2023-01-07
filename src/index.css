@@ -113,3 +113,8 @@ body {
 .saira {
   font-family: 'Saira', sans-serif;
 }
+
+.button {
+  cursor: pointer;
+}
+
