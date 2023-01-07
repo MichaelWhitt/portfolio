@@ -1,11 +1,11 @@
 import { useSpring, animated } from '@react-spring/web'
 import {useState} from 'react'
-import emailIcon from '../../../assets/email.png'
-import githubIcon from '../../../assets/github.png'
-import linkedIcon from '../../../assets/linked.png'
-import contactIcon from '../../../assets/contact.png'
+import emailIcon from '../../assets/email.png'
+import githubIcon from '../../assets/github.png'
+import linkedIcon from '../../assets/linked.png'
+import contactIcon from '../../assets/contact.png'
 
-const LandingNav = (props) => {
+const NavWidget = (props) => {
     const [navText, setNavText] = useState('')
     const [springs, api] = useSpring(() => ({
         from: { y: 0 }
@@ -77,4 +77,4 @@ return(
     </div>
 )
 }
-export default LandingNav
+export default NavWidget

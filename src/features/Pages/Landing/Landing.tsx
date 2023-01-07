@@ -1,6 +1,6 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
 import {useState, useEffect} from 'react'
-import LandingNav from './LandingNav'
+import NavWidget from '../../Nav/NavWidget'
 import Animate from '../../AnimateWrapper'
 import myPhoto from '../../../assets/me.jpg'
 import IntroName from '../../Landing/IntroName'
@@ -61,7 +61,7 @@ const Landing = (props) => {
                 >
                     {generateEdgeBtnTitle('Greetings')}
                 </div>
-                <LandingNav handleSlide={props.handleSlide} />
+                <NavWidget handleSlide={props.handleSlide} />
                 <Animate from={{opacity: 0}} to={{opacity: 1}} delay={7000} config={{duration: 2000}} style={{position: 'absolute', right: '15%', top: '20%'}}>
                     <img src={myPhoto} width={150} height={150} style={{borderRadius: '50%'}} />
                 </Animate>

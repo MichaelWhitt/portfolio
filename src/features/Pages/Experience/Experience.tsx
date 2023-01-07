@@ -1,4 +1,5 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
+import NavWidget from '../../Nav/NavWidget'
 
 const Experience = (props) => {
 
@@ -13,7 +14,7 @@ const Experience = (props) => {
                 }}
             >   
                 <div id='xp-content'>
-                        stuff goes in here
+                    
                 </div>
                 
                 <div 
@@ -23,6 +24,7 @@ const Experience = (props) => {
                 >
                     {generateEdgeBtnTitle('Experience')}
                 </div>
+                <NavWidget />
             </div>
         </>
     )
