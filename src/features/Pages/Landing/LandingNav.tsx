@@ -42,7 +42,7 @@ const LandingNav = (props) => {
                 setNavText('Connect with Me')
                 break
             case 'email':
-                setNavText('Get in Touch')
+                setNavText('connect@michaeldwhitt.com')
                 break
             case 'contact':
                 setNavText('Other Contact Methods')            
@@ -55,7 +55,7 @@ const LandingNav = (props) => {
       }
 
 return(
-    <div style={{width: 300, height: 40, borderBottom: '1px solid #a0d6b4', position: 'absolute', right: '15%', bottom: 30}}>
+    <div style={{width: 300, height: 40, borderBottom: '1px solid #a0d6b4', position: 'absolute', right: '10%', bottom: 30}}>
         <div style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20, paddingLeft: 20}}>
             <a className='navIcon' href='https://github.com/MichaelWhitt' target='_blank' rel="noopener noreferrer" onMouseEnter={() => onMouseEnter('github')} onMouseLeave={onMouseLeave}>
                 <img src={githubIcon} width={30} />

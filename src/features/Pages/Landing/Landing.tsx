@@ -1,14 +1,15 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
 import {useState, useEffect} from 'react'
 import LandingNav from './LandingNav'
-import {useSpring, animated} from 'react-spring'
 import Animate from '../../AnimateWrapper'
+import myPhoto from '../../../assets/me.jpg'
+import IntroName from '../../Landing/IntroName'
 
 
 // TODO: Clear timeout if active page switches for writing function
 
 const Landing = (props) => {
-    const paragraphText = `I am a software engineer who has worked on projects of all sizes and from teams located around the world. I thrive in environments
+    const paragraphText = `I am a software engineer who has worked on projects of all sizes and with teams located around the world. I thrive in environments
     with creative thinkers + diversity, and love to learn new tech.`
     const [text, setText] = useState('')
     
@@ -44,19 +45,10 @@ const Landing = (props) => {
                         to={{x: 0}} 
                         style={{height: 1, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '2%', top: 25}} 
                     />
-                
-                    <Animate from={{x: -2600}} to={{x: 0}} style={{color: '#a0d6b4', fontSize: 16}}>
-                        <span>Hello, my name is</span>
-                    </Animate>
-                    <Animate from={{x: -2600}} to={{x: 0}} delay={350} style={{fontSize: 50, color: '#a0d6b4'}}>
-                        <span>MICHAEL WHITT</span>
-                    </Animate>
+                    <IntroName />
                     <p style={{fontSize: 30, marginTop: 40, color: '#aaa', width: '70%', fontWeight: 600}}>
                         {text}{text.length !== paragraphText.length ? '_' : ''}
                     </p>
-                    <Animate from={{opacity: 0}} to={{opacity: 1}} config={{duration: 1000}} delay={7000} style={{fontSize: 40, marginTop: 10, color: '#ff0011'}}>
-                        <span>I build web and mobile apps.</span>
-                    </Animate>
                 </div>
                 <div 
                     className='edgeContainer' 
@@ -66,6 +58,9 @@ const Landing = (props) => {
                     {generateEdgeBtnTitle('Greetings')}
                 </div>
                 <LandingNav handleSlide={props.handleSlide} />
+                <Animate from={{opacity: 0}} to={{opacity: 1}} delay={7000} config={{duration: 2000}} style={{position: 'absolute', left: '25%', bottom: '20%'}}>
+                    <img src={myPhoto} width={150} height={150} style={{borderRadius: '50%'}} />
+                </Animate>
             </div>
         </>
     )
