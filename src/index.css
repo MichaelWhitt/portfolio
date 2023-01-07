@@ -83,7 +83,18 @@ body {
 }
 
 #xp-content {
-  padding-left: 4%
+  padding-left: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.my-xp {
+  width: 700px;
+  height: 500px;
+  border: 1px solid #a0d6b4;
+  border-radius: 12px;
 }
 
 #projects {
@@ -117,4 +128,3 @@ body {
 .button {
   cursor: pointer;
 }
-

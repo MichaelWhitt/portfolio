@@ -1,5 +1,6 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
 import NavWidget from '../../Nav/NavWidget'
+import MyXP from './MyXP'
 
 const Experience = (props) => {
 
@@ -14,9 +15,8 @@ const Experience = (props) => {
                 }}
             >   
                 <div id='xp-content'>
-                    
+                    <MyXP />
                 </div>
-                
                 <div 
                     className='edgeContainer' 
                     onClick={() => props.handleSlide('second')}
