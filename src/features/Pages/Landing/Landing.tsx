@@ -58,7 +58,7 @@ const Landing = (props) => {
                     {generateEdgeBtnTitle('Greetings')}
                 </div>
                 <LandingNav handleSlide={props.handleSlide} />
-                <Animate from={{opacity: 0}} to={{opacity: 1}} delay={7000} config={{duration: 2000}} style={{position: 'absolute', left: '25%', bottom: '20%'}}>
+                <Animate from={{opacity: 0}} to={{opacity: 1}} delay={7000} config={{duration: 2000}} style={{position: 'absolute', right: '15%', top: '20%'}}>
                     <img src={myPhoto} width={150} height={150} style={{borderRadius: '50%'}} />
                 </Animate>
             </div>

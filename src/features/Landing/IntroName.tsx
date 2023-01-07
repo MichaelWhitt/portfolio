@@ -12,7 +12,7 @@ const IntroName = () => {
                 <div style={{display: 'flex'}}>
                     {fArray.map((char, idx) => {
                         return(
-                            <Animate from={{y: -20}} to={{y: 0}} delay={1000 + (idx * 150)}>
+                            <Animate from={{y: -20, opacity: 0}} to={{y: 0, opacity: 1}} delay={1000 + (idx * 150)}>
                                 <span style={{fontWeight: char === 'M' ? 600 : 300, color: '#a0d6b4', fontSize: 40}}>{char}</span>
                             </Animate>
                         )
@@ -21,7 +21,7 @@ const IntroName = () => {
                 <div style={{display: 'flex'}}>
                     {lArray.map((char, idx) => {
                         return(
-                            <Animate from={{y: 20}} to={{y: 0}} delay={2000 + (idx * 150)}>
+                            <Animate from={{y: 20, opacity: 0}} to={{y: 0, opacity: 1}} delay={2000 + (idx * 150)}>
                                 <span style={{fontWeight: char === 'W' ? 600 : 300, color: '#a0d6b4', fontSize: 40}}>{char}</span>
                             </Animate>
                         )
