@@ -51,7 +51,7 @@ const Landing = (props) => {
                         {text}{text.length !== paragraphText.length ? '_' : ''}
                     </p>
                     <div style={{position: 'absolute', bottom: '5%', left: '10%'}}>
-                        <Button onClick={() => props.handleSlide('second')} text={'Explore'} />
+                        <Button onClick={() => props.handleSlide('second')} text={'Explore'} delay={{lag: 3000}} />
                     </div>
                     
                 </div>
