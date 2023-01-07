@@ -31,13 +31,13 @@ const IntroName = () => {
                     from={{x: -2200}} 
                     to={[{x: 0, y: 10}, {y:-5}]}
                     delay={2500}
-                    style={{height: 2, width: 100, borderBottom: '1px solid #a0d6b4', position: 'absolute', left: 250, top: 230}} 
+                    style={{height: 2, width: 100, borderBottom: '1px solid #a0d6b4', position: 'relative', left: -200, top: 60}} 
                 />
                 <Animate 
                     from={{x: -2200}} 
                     to={[{x: 0, y: 10}, {y:-5}]}
                     delay={2900}
-                    style={{height: 2, width: 100, borderBottom: '1px solid #a0d6b4', position: 'absolute', left: 300, top: 240}} 
+                    style={{height: 2, width: 100, borderBottom: '1px solid #a0d6b4', position: 'relative', left: -280, top: 70}} 
                 />
             </div>
         )
