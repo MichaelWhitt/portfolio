@@ -42,7 +42,7 @@ const Button = (props: ButtonInterface) => {
           }
         })
       }
-      console.log(window)
+      
 
     return(
         <animated.button 
