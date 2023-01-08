@@ -90,13 +90,11 @@ body {
   width: 100%;
 }
 
-.xp-container {
+.xp-display {
   width: 700px;
   height: 600px;
   border-top: 1px solid #a0d6b4;
-  
-  border-bottom: 1px solid #a0d6b4
-
+  border-bottom: 1px solid #a0d6b4;
 }
 
 .xp-sidebar {
@@ -137,6 +135,12 @@ body {
 .xp-item:hover, .xp-item.active {
   color: #a0d6b4;
   background: #205295;
+}
+
+#xp-tile {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
 }
 
 .thumb {

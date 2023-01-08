@@ -1,11 +1,13 @@
 import {useState} from 'react'
-import Scrollbar
- from './Scrollbar'
-const MyXP = () => {
+import Scrollbar from './Scrollbar'
+import XPTile from './XPTile'
+
+const XPContainer = () => {
     const [chosen, setChosen] = useState('ClearC2')
 
     const work = ['ClearC2', 'Astraphos', 'Dreamland', 'Mosaic']
     const school = ['NC', 'UNNC', 'UNL', 'PKU']
+
     return(
         <div style={{display: 'flex'}}>
             <Scrollbar chosen={[0, ...work, 5, ...school].indexOf(chosen)} />
@@ -39,11 +41,11 @@ const MyXP = () => {
                         ))}
                     </div>
                 </div>
-            <div className='xp-container'>
-                
+            <div className='xp-display'>
+                <XPTile />
             </div>
         </div>
     )
 }
 
-export default MyXP
+export default XPContainer

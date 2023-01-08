@@ -1,6 +1,6 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
 import NavWidget from '../../Nav/NavWidget'
-import MyXP from './MyXP'
+import MyXP from './XPContainer'
 
 const Experience = (props) => {
 
