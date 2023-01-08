@@ -90,11 +90,48 @@ body {
   width: 100%;
 }
 
-.my-xp {
+.xp-container {
   width: 700px;
-  height: 500px;
+  height: 600px;
   border: 1px solid #a0d6b4;
   border-radius: 12px;
+}
+
+.xp-sidebar {
+  height: 100%;
+  width: 120px;
+  border-right: 1px solid #a0d6b4;
+  display: flex;
+  flex-direction: column;
+}
+
+.xp-title {
+  width: 100%;
+  background: #0A2647;
+  height: 60px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.xp-list {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.xp-list div {
+  flex: 1;
+}
+
+.xp-item {
+  cursor: pointer;
+  color: #aaa;
+  font-weight: 800;
+}
+
+.xp-item:hover, .xp-item.active {
+  color: #a0d6b4;
+  background: #205295;
 }
 
 #projects {
@@ -127,4 +164,10 @@ body {
 
 .button {
   cursor: pointer;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
