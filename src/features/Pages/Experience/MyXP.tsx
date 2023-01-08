@@ -1,4 +1,6 @@
 import {useState} from 'react'
+import Scrollbar
+ from './Scrollbar'
 const MyXP = () => {
     const [chosen, setChosen] = useState('ClearC2')
 
@@ -6,6 +8,7 @@ const MyXP = () => {
     const school = ['NC', 'UNNC', 'UNL', 'PKU']
     return(
         <div style={{display: 'flex'}}>
+            <Scrollbar chosen={[0, ...work, 5, ...school].indexOf(chosen)} />
             <div className='xp-sidebar'>
                     <div className='center xp-title'>
                         Work

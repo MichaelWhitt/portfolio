@@ -139,6 +139,17 @@ body {
   background: #205295;
 }
 
+.thumb {
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #a0d6b4;
+  border-radius: 20px;
+  position: relative;
+  right: 6px;
+  transition-duration: .5s;
+}
+
 #projects {
   background: #205295;
   width: 96%;
