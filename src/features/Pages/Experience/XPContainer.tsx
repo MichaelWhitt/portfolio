@@ -1,4 +1,5 @@
-import {useState} from 'react'
+import {useState, useContext} from 'react'
+import { PageAnimationContext } from '../Stacker'
 import Scrollbar from './Scrollbar'
 import XPTile from './XPTile'
 
@@ -7,12 +8,10 @@ const XPContainer = () => {
 
     const work = ['ClearC2', 'NuCamp', 'Astraphos', 'Dreamland']
     const school = ['NC', 'UNNC', 'UNL', 'PKU']
+    const context = useContext(PageAnimationContext)
 
     return(
         <div style={{height: '100%', paddingTop: 200, width: '100%'}}>
-            {/* <div id='xp-container-title'>
-                Experience and Education
-            </div> */}
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 <Scrollbar chosenIndex={[0, ...work, 5, ...school].indexOf(chosen)} />
                 <div className='xp-sidebar'>

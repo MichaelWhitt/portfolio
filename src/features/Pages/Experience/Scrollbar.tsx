@@ -5,9 +5,13 @@ import d from '../../../assets/dream2.png'
 import unnc from '../../../assets/unnc.png'
 import unl from '../../../assets/unl.png'
 import pku from '../../../assets/pku.png'
+import {useContext} from 'react'
+import Animate from '../../AnimateWrapper'
+import { PageAnimationContext } from '../Stacker'
 
 
 const Scrollbar = ({chosenIndex}) => {
+  const {visitedContext} = useContext(PageAnimationContext)
 
     let position = chosenIndex * 10
     let src = ''
@@ -45,8 +49,11 @@ const Scrollbar = ({chosenIndex}) => {
         background: '#afa',
         marginRight: 30
       }}>
-        {/* <div className='thumb' style={{top: position +'%'}} /> */}
-        <img className='thumb' src={src} style={{top: position +'%', width: 40, height: 40}} />
+        {visitedContext.second && (
+          <Animate from={{y: 500, x: -25} } to={[{y: 0}, {x:0}]} delay={500} style={{height: '100%'}} >
+            <img className='thumb' src={src} style={{top: position + '%', width: 40, height: 40}} />
+          </Animate>
+        )}
       </div>
     )
   }
