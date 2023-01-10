@@ -14,7 +14,7 @@ const XPContainer = () => {
                 Experience and Education
             </div> */}
             <div style={{display: 'flex', justifyContent: 'center'}}>
-                <Scrollbar chosen={[0, ...work, 5, ...school].indexOf(chosen)} />
+                <Scrollbar chosenIndex={[0, ...work, 5, ...school].indexOf(chosen)} />
                 <div className='xp-sidebar'>
                     <div className='center xp-title'>
                         Work
