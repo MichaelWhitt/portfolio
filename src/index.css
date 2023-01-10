@@ -88,13 +88,26 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 
 .xp-display {
-  width: 700px;
+  width: 60%;
   height: 600px;
-  border-top: 1px solid #a0d6b4;
+  /* border-top: 1px solid #a0d6b4; */
   border-bottom: 1px solid #a0d6b4;
+  display: flex;
+  justify-content: center;
+}
+
+#xp-container-title {
+  color: #a0d6b4;
+  font-size: 60px;
+  margin: 20px 0 10px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  font-family: 'Teko', sans-serif
 }
 
 .xp-sidebar {
@@ -104,6 +117,7 @@ body {
   flex-direction: column;
   margin-right: 20px;
   border-left: 1px solid #a0d6b4;
+  /* border-right: 1px solid #a0d6b4 */
   
 }
 
@@ -140,7 +154,7 @@ body {
 #xp-tile {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 0 0 20px;
 }
 
 .thumb {

@@ -5,13 +5,17 @@ import XPTile from './XPTile'
 const XPContainer = () => {
     const [chosen, setChosen] = useState('ClearC2')
 
-    const work = ['ClearC2', 'Astraphos', 'Dreamland', 'Mosaic']
+    const work = ['ClearC2', 'NuCamp', 'Astraphos', 'Dreamland']
     const school = ['NC', 'UNNC', 'UNL', 'PKU']
 
     return(
-        <div style={{display: 'flex'}}>
-            <Scrollbar chosen={[0, ...work, 5, ...school].indexOf(chosen)} />
-            <div className='xp-sidebar'>
+        <div style={{height: '100%', paddingTop: 200, width: '100%'}}>
+            {/* <div id='xp-container-title'>
+                Experience and Education
+            </div> */}
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                <Scrollbar chosen={[0, ...work, 5, ...school].indexOf(chosen)} />
+                <div className='xp-sidebar'>
                     <div className='center xp-title'>
                         Work
                     </div>
@@ -41,8 +45,9 @@ const XPContainer = () => {
                         ))}
                     </div>
                 </div>
-            <div className='xp-display'>
-                <XPTile />
+                <div className='xp-display'>
+                    <XPTile chosen={chosen} />
+                </div>
             </div>
         </div>
     )

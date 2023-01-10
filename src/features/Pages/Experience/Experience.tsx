@@ -1,6 +1,6 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
 import NavWidget from '../../Nav/NavWidget'
-import MyXP from './XPContainer'
+import XPContainer from './XPContainer'
 
 const Experience = (props) => {
 
@@ -15,7 +15,7 @@ const Experience = (props) => {
                 }}
             >   
                 <div id='xp-content'>
-                    <MyXP />
+                    <XPContainer />
                 </div>
                 <div 
                     className='edgeContainer' 
