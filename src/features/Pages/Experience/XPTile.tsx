@@ -14,17 +14,36 @@ const XPTile = ({chosen}) => {
 
     const {visitedContext} = useContext(PageAnimationContext)
 
+    const animateFirstList = () => {
+
+        const arr = [
+            'Write performant and maintainable code for ClearC2 CRM Web and Mobile projects and those of our clients, ranging from Fortune 500s to SMEs',
+            'Work with a diverse set of tools that suit project needs such as React, Javascript, Typescript, Git/Github, Redux, Remix, SQL, CSS, Apache Cordova, and numerous NPM and internal packages',
+            'Attend and collaborate in various internal and external meetings with people from all aspects of development and design',
+            'Create and give brownbag presentations on various topics which have included Git and Code Accessibility',
+            'Have received multiple bonuses for personal contributions'
+        ]
+
+        return(
+            <>
+                {arr.map( (child, idx) => (
+                    <Animate from={{x: 900}} to={{x: 0}} delay={idx * 300} config={{duration: 400}} key={child}>
+                        <li>
+                            {child}
+                        </li>
+                    </Animate>
+                ))}
+            </>  
+        )
+    }
+
     if (chosen === 'ClearC2') {
         title = 'Software Engineer'
         link = <a href='https://www.clearc2.com/' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>{chosen}</a>
         date = 'October 2021 - Present'
         description = (
             <ul id='xp-ul-container'>
-                <li>Write performant and maintainable code for ClearC2 CRM Web and Mobile projects and those of our clients, ranging from Fortune 500s to SMEs</li>
-                <li>Work with a diverse set of tools that suit project needs such as React, Javascript, Typescript, Git/Github, Redux, Remix, SQL, CSS, Apache Cordova, and numerous NPM and internal packages</li>
-                <li>Attend and collaborate in various internal and external meetings with people from all aspects of development and design</li>
-                <li>Create and give brownbag presentations on various topics which have included Git and Code Accessibility </li>
-                <li>Have received multiple bonuses for personal contributions</li>
+                {animateFirstList()}
             </ul>
         )
     }
@@ -139,12 +158,16 @@ const XPTile = ({chosen}) => {
                 </h2>
             </div>
             {visitedContext.second && (
-                <Animate from={{y: -1200, opacity: 0}} to={{y: 0, opacity: 1}} delay={500}>
+                <Animate from={{opacity: 0}} to={{opacity: 1}} delay={200} config={{duration: 1000}}>
                     <hr id='hr' />
                 </Animate>
             )}
             <div style={{width: '100%',  color: '#fff', wordWrap: 'break-word'}}>
-                {description}
+            {visitedContext.second && (
+                <Animate from={{opacity: 0}} to={{opacity: 1}} delay={500} config={{duration: 1000}}>
+                   {description}
+                </Animate>
+            )}
             </div>
         </div>
     )
