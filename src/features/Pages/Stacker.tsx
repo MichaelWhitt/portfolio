@@ -4,6 +4,9 @@ import Contact from "./Contact/Contact"
 import Experience from "./Experience/Experience"
 import Projects from "./Projects/Projects"
 
+
+//TODO Responsive design, especially where there is text 
+//TODO Add tooltips to logos
 export const PageAnimationContext = createContext({
     visitedContext:{first: true, second: false, third: false, fourth: false},
     setVisitedContext: () => {}

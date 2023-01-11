@@ -28,10 +28,10 @@ const Projects = (props) => {
                         style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '10%', top: 25}} 
                     />
                     <div id='project-tiles-container'>
-
-                        <ProjectTile name='Raid SL'/>
-                        <ProjectTile />
-                        <ProjectTile name='Pup Companion'/>
+                        <ProjectTile name='Portfolio' />
+                        <ProjectTile name='Show Tracker'/>
+                        <ProjectTile name='Raid Codex'/>
+                        <ProjectTile name='Can We Listen?'/>
                     </div>
                 </div>
                 <div 
