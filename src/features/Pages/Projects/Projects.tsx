@@ -17,6 +17,9 @@ const Projects = (props) => {
                 }}
             >
                 <div id='projects-content'>
+                    <div style={{position: 'absolute', left: '12%', top: 45, fontSize: 30, fontWeight: 800, color: '#a0d6b4'}}>
+                        Recent Projects
+                    </div>
                     <Animate 
                         from={{y: 2600}} 
                         to={{y: 0}} 

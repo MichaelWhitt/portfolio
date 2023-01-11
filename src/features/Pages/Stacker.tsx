@@ -7,6 +7,10 @@ import Projects from "./Projects/Projects"
 
 //TODO Responsive design, especially where there is text 
 //TODO Add tooltips to logos
+//TODO Add archive to projects
+//TODO Add animations to project screen
+//TODO (optional) Add archived projects to projects
+//TODO (optional) Add zindex to edgecontainer
 export const PageAnimationContext = createContext({
     visitedContext:{first: true, second: false, third: false, fourth: false},
     setVisitedContext: () => {}
