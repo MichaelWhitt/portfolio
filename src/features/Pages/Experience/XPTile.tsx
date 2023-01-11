@@ -22,6 +22,9 @@ const XPTile = ({chosen}) => {
                     <ul id='xp-ul-container'>
                         <Animate from={{x: 50, opacity:0}} to={{x: 0, opacity:1}} delay={idx * 100} config={{duration: 200}} key={child}>
                             <li id='xp-li'>
+                                <div style={{display: 'flex', justifyContent: 'center', marginTop: 9}}>
+                                    <span id='list-bullet' />
+                                </div>
                                 {child}
                             </li>
                         </Animate>

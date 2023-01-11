@@ -157,7 +157,18 @@ body {
 }
 
 #xp-li {
-  font-size: 18px
+  font-size: 18px;
+  list-style: none;
+  display: flex;
+  gap: 20px
+}
+
+#list-bullet {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  display: block;
+  background: #a0d6b4;
+  height: 10px;
+  width: 10px;
 }
 
 .thumb {
