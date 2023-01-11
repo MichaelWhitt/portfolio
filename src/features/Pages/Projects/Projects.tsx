@@ -2,6 +2,7 @@ import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
 import NavWidget from '../../Nav/NavWidget'
 import Animate from '../../AnimateWrapper'
 import briefIcon from '../../../assets/briefcase.png'
+import ProjectTile from './ProjectTile'
 
 const Projects = (props) => {
 
@@ -26,6 +27,12 @@ const Projects = (props) => {
                         to={{x: 0}} 
                         style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '10%', top: 25}} 
                     />
+                    <div id='project-tiles-container'>
+
+                        <ProjectTile name='Raid SL'/>
+                        <ProjectTile />
+                        <ProjectTile name='Pup Companion'/>
+                    </div>
                 </div>
                 <div 
                     className='edgeContainer' 
