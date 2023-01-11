@@ -11,7 +11,16 @@ const Contact = (props) => {
                 className='page'
             >   
                 <div id='contact-content'>
-                        stuff goes in here
+                    <Animate 
+                        from={{y: 2600}} 
+                        to={{y: 0}} 
+                        style={{height: 100, width: 2, borderLeft: '1px solid #a0d6b4', position: 'absolute', left: '14%', top: 25}} 
+                    />
+                    <Animate 
+                        from={{x: 3600}} 
+                        to={{x: 0}} 
+                        style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '14%', top: 25}} 
+                    />
                 </div>
                 
                 <div 
