@@ -5,6 +5,7 @@ import Animate from '../../AnimateWrapper'
 import myPhoto from '../../../assets/me.jpg'
 import IntroName from './IntroName'
 import Button from '../../Buttons/Button'
+import helloIcon from '../../../assets/hello.png'
 
 
 // TODO: Clear timeout if active page switches for writing function
@@ -44,7 +45,7 @@ const Landing = (props) => {
                     <Animate 
                         from={{x: 3600}} 
                         to={{x: 0}} 
-                        style={{height: 1, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '2%', top: 25}} 
+                        style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '2%', top: 25}} 
                     />
                     <IntroName />
                     <p style={{fontSize: 30, marginTop: 40, color: '#aaa', width: '60%', fontWeight: 600}}>
@@ -53,6 +54,13 @@ const Landing = (props) => {
                     <div style={{position: 'absolute', bottom: '5%', left: '10%'}}>
                         <Button onClick={() => props.handleSlide('second')} text={'Explore'} delay={{lag: 3000}} />
                     </div>
+                    <Animate 
+                        from={{y: 2600}} 
+                        to={{y: 0}}
+                        style={{position: 'absolute', right: 0, bottom: 0}} 
+                    >
+                        <img src={helloIcon} width={40} height={40}/>
+                    </Animate>
                 </div>
                 <div 
                     className='edgeContainer' 

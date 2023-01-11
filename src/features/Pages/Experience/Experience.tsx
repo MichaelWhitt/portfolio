@@ -1,6 +1,8 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
 import NavWidget from '../../Nav/NavWidget'
 import XPContainer from './XPContainer'
+import Animate from '../../AnimateWrapper'
+import xpIcon from '../../../assets/experience.png'
 
 const Experience = (props) => {
 
@@ -25,6 +27,13 @@ const Experience = (props) => {
                     {generateEdgeBtnTitle('Experience')}
                 </div>
                 <NavWidget handleSlide={props.handleSlide} />
+                <Animate 
+                    from={{y: 2600}} 
+                    to={{y: 0}}
+                    style={{position: 'absolute', right: 11, bottom: 0}} 
+                >
+                    <img src={xpIcon} width={40} height={40}/>
+                </Animate>
             </div>
         </>
     )

@@ -1,4 +1,7 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
+import Animate from '../../AnimateWrapper'
+import NavWidget from '../../Nav/NavWidget'
+import contactIcon from '../../../assets/contactHollow.png'
 const Contact = (props) => {
 
     return(
@@ -18,6 +21,14 @@ const Contact = (props) => {
                 >
                     {generateEdgeBtnTitle('CONTACT')}
                 </div>
+                <NavWidget handleSlide={props.handleSlide} />
+                <Animate 
+                    from={{y: 2600}} 
+                    to={{y: 0}}
+                    style={{position: 'absolute', right: 11, bottom: 0}} 
+                >
+                    <img src={contactIcon} width={40} height={40}/>
+                </Animate>
             </div>
         </>
     )

@@ -1,5 +1,7 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
 import NavWidget from '../../Nav/NavWidget'
+import Animate from '../../AnimateWrapper'
+import briefIcon from '../../../assets/briefcase.png'
 
 const Projects = (props) => {
 
@@ -24,6 +26,13 @@ const Projects = (props) => {
                     {generateEdgeBtnTitle('PROJECTS')}
                 </div>
                 <NavWidget handleSlide={props.handleSlide} />
+                <Animate 
+                    from={{y: 2600}} 
+                    to={{y: 0}}
+                    style={{position: 'absolute', right: 11, bottom: 0}} 
+                >
+                    <img src={briefIcon} width={40} height={40}/>
+                </Animate>
             </div>
         </>
     )
