@@ -26,9 +26,9 @@ const XPTile = ({chosen}) => {
 
         return(
             <>
-                {arr.map( (child, idx) => (
-                    <Animate from={{x: 900}} to={{x: 0}} delay={idx * 300} config={{duration: 400}} key={child}>
-                        <li>
+                {visitedContext.second && arr.map( (child, idx) => (
+                    <Animate from={{x: 50}} to={{x: 0}} delay={idx * 150} config={{duration: 500}} key={child}>
+                        <li id='xp-li'>
                             {child}
                         </li>
                     </Animate>
@@ -163,11 +163,7 @@ const XPTile = ({chosen}) => {
                 </Animate>
             )}
             <div style={{width: '100%',  color: '#fff', wordWrap: 'break-word'}}>
-            {visitedContext.second && (
-                <Animate from={{opacity: 0}} to={{opacity: 1}} delay={500} config={{duration: 1000}}>
-                   {description}
-                </Animate>
-            )}
+                {description}
             </div>
         </div>
     )

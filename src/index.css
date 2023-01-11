@@ -152,12 +152,13 @@ body {
   height: 100%;
   padding: 0 0 20px;
 }
-#xp-ul-container {
-  /* border-left: 1px solid #a0d6b4 */
-}
 
 #xp-ul-container li {
   margin-top: 10px
+}
+
+#xp-li {
+  font-size: 16px
 }
 
 .thumb {
