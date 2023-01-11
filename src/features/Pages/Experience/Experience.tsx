@@ -25,15 +25,15 @@ const Experience = (props) => {
                     style={props.activePage ==='second' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
                     {generateEdgeBtnTitle('Experience')}
+                    <Animate 
+                        from={{y: 2600}} 
+                        to={{y: 0}}
+                        style={{marginTop: 'auto', marginBottom: 20, marginRight: 8, width: '100%', textAlign: 'center'}}
+                    >
+                        <img src={xpIcon} width={40} height={40}/>
+                    </Animate>
                 </div>
                 <NavWidget handleSlide={props.handleSlide} />
-                <Animate 
-                    from={{y: 2600}} 
-                    to={{y: 0}}
-                    style={{position: 'absolute', right: 11, bottom: 0}} 
-                >
-                    <img src={xpIcon} width={40} height={40}/>
-                </Animate>
             </div>
         </>
     )

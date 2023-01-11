@@ -24,15 +24,15 @@ const Projects = (props) => {
                     style={props.activePage ==='third' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
                     {generateEdgeBtnTitle('PROJECTS')}
+                    <Animate 
+                        from={{y: 2600}} 
+                        to={{y: 0}}
+                        style={{marginTop: 'auto', marginBottom: 20, marginRight: 4, width: '100%', textAlign: 'center'}}
+                    >
+                        <img src={briefIcon} width={40} height={40}/>
+                    </Animate>
                 </div>
                 <NavWidget handleSlide={props.handleSlide} />
-                <Animate 
-                    from={{y: 2600}} 
-                    to={{y: 0}}
-                    style={{position: 'absolute', right: 11, bottom: 0}} 
-                >
-                    <img src={briefIcon} width={40} height={40}/>
-                </Animate>
             </div>
         </>
     )

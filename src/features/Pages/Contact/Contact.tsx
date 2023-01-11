@@ -20,15 +20,16 @@ const Contact = (props) => {
                     style={props.activePage ==='fourth' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
                     {generateEdgeBtnTitle('CONTACT')}
+                    <Animate 
+                        from={{y: 2600}} 
+                        to={{y: 0}}
+                        style={{marginTop: 'auto', marginBottom: 20, width: '100%', textAlign: 'center'}}
+                    >
+                        <img src={contactIcon} width={40} height={40}/>
+                    </Animate>
                 </div>
                 <NavWidget handleSlide={props.handleSlide} />
-                <Animate 
-                    from={{y: 2600}} 
-                    to={{y: 0}}
-                    style={{position: 'absolute', right: 11, bottom: 0}} 
-                >
-                    <img src={contactIcon} width={40} height={40}/>
-                </Animate>
+                
             </div>
         </>
     )

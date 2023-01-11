@@ -54,13 +54,6 @@ const Landing = (props) => {
                     <div style={{position: 'absolute', bottom: '5%', left: '10%'}}>
                         <Button onClick={() => props.handleSlide('second')} text={'Explore'} delay={{lag: 3000}} />
                     </div>
-                    <Animate 
-                        from={{y: 2600}} 
-                        to={{y: 0}}
-                        style={{position: 'absolute', right: 0, bottom: 0}} 
-                    >
-                        <img src={helloIcon} width={40} height={40}/>
-                    </Animate>
                 </div>
                 <div 
                     className='edgeContainer' 
@@ -68,6 +61,13 @@ const Landing = (props) => {
                     style={props.activePage ==='first' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
                     {generateEdgeBtnTitle('Greetings')}
+                    <Animate 
+                        from={{y: 2600}} 
+                        to={{y: 0}}
+                        style={{marginTop: 'auto', marginBottom: 20, marginRight: 0, width: '100%', textAlign: 'center'}}
+                    >
+                        <img src={helloIcon} width={40} height={40}/>
+                    </Animate>
                 </div>
                 <NavWidget handleSlide={props.handleSlide} />
                 <Animate from={{opacity: 0}} to={{opacity: 1}} delay={7000} config={{duration: 2000}} style={{position: 'absolute', right: '15%', top: '20%'}}>
