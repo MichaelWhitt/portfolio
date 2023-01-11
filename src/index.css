@@ -189,7 +189,8 @@ body {
 }
 
 #projects-content {
-  padding-left: 8%
+  padding-left: 8%;
+  width: 100%;
 }
 
 #contact {
@@ -199,7 +200,8 @@ body {
 }
 
 #contact-content {
-  padding-left: 12%
+  padding-left: 12%;
+  width: 100%;
 }
 
 .teko {

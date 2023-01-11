@@ -1,4 +1,6 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
+import NavWidget from '../../Nav/NavWidget'
+
 const Projects = (props) => {
 
     return(
@@ -12,7 +14,7 @@ const Projects = (props) => {
                 }}
             >
                 <div id='projects-content'>
-                    stuff goes in here
+                    asdasd
                 </div>
                 <div 
                     className='edgeContainer' 
@@ -21,6 +23,7 @@ const Projects = (props) => {
                 >
                     {generateEdgeBtnTitle('PROJECTS')}
                 </div>
+                <NavWidget handleSlide={props.handleSlide} />
             </div>
         </>
     )

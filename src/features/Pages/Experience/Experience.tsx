@@ -24,7 +24,7 @@ const Experience = (props) => {
                 >
                     {generateEdgeBtnTitle('Experience')}
                 </div>
-                <NavWidget />
+                <NavWidget handleSlide={props.handleSlide} />
             </div>
         </>
     )
