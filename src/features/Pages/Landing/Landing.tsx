@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 import NavWidget from '../../Nav/NavWidget'
 import Animate from '../../AnimateWrapper'
 import myPhoto from '../../../assets/me.jpg'
-import IntroName from '../../Landing/IntroName'
+import IntroName from './IntroName'
 import Button from '../../Buttons/Button'
 
 

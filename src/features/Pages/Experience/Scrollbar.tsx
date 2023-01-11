@@ -50,8 +50,8 @@ const Scrollbar = ({chosenIndex}) => {
         marginRight: 30
       }}>
         {visitedContext.second && (
-          <Animate from={{y: 500, x: -25} } to={[{y: 0}, {x:0}]} delay={500} config={{duration: 600}} style={{height: '100%'}} >
-            <img className='thumb' src={src} style={{top: position + '%', width: 40, height: 40}} />
+          <Animate from={{y: 500, x: -25} } to={[{y: 0}, {x:0}]} delay={500} config={{duration: 600}} style={{height: '100%', borderRadius: 50}} >
+            <img className='thumb' src={src} style={{top: position + '%', width: 40, height: 40, padding: 2, borderRadius: 50}} />
           </Animate>
         )}
       </div>

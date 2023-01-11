@@ -172,13 +172,13 @@ body {
 }
 
 .thumb {
-  margin-top: 8px;
+  margin-top: 6px;
   width: 20px;
   height: 20px;
   border: 2px solid #a0d6b4;
   border-radius: 20px;
   position: relative;
-  left: -20px;
+  left: -25px;
   transition-duration: .5s;
 }
 

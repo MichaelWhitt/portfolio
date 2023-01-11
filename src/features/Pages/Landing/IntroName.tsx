@@ -1,4 +1,4 @@
-import Animate from '../AnimateWrapper'
+import Animate from '../../AnimateWrapper'
 
 const IntroName = () => {
 
