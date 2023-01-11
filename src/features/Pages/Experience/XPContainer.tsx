@@ -20,7 +20,7 @@ const XPContainer = () => {
                 <div className='xp-sidebar'>
                     <div className='center xp-title'>
                         {visitedContext.second && (
-                            <Animate from={{x: -250}} to={{x: 0}} delay={300}>
+                            <Animate from={{x: -250}} to={{x: 0}} delay={300} style={{borderBottom: '1px solid #a0d6b4'}}>
                                 <img src={workspace} width={50} height={50}/>
                             </Animate>
                         )}
@@ -38,8 +38,8 @@ const XPContainer = () => {
                     </div>
                     <div className='center xp-title'>
                         {visitedContext.second && (
-                            <Animate from={{x: -250}} to={{x: 0}} delay={300}>
-                                <img src={grad} width={50} height={50}/>
+                            <Animate from={{x: -250}} to={{x: 0}} delay={300} style={{borderBottom: '1px solid #a0d6b4'}}>
+                                <img src={grad} width={50} height={50} />
                             </Animate>
                         )}
                     </div>

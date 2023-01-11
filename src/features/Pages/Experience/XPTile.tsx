@@ -1,4 +1,6 @@
-import { ReactFragment } from "react"
+import Animate from '../../AnimateWrapper'
+import { useContext } from 'react'
+import { PageAnimationContext } from '../Stacker'
 
 const XPTile = ({chosen}) => {
     let title = ''
@@ -10,6 +12,8 @@ const XPTile = ({chosen}) => {
         </ul>
     )
 
+    const {visitedContext} = useContext(PageAnimationContext)
+
     if (chosen === 'ClearC2') {
         title = 'Software Engineer'
         link = <a href='https://www.clearc2.com/' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>{chosen}</a>
@@ -19,8 +23,8 @@ const XPTile = ({chosen}) => {
                 <li>Write performant and maintainable code for ClearC2 CRM Web and Mobile projects and those of our clients, ranging from Fortune 500s to SMEs</li>
                 <li>Work with a diverse set of tools that suit project needs such as React, Javascript, Typescript, Git/Github, Redux, Remix, SQL, CSS, Apache Cordova, and numerous NPM and internal packages</li>
                 <li>Attend and collaborate in various internal and external meetings with people from all aspects of development and design</li>
-                <li>Create and give brownbag meetings on various topics which have included Git and Code Accessibility </li>
-                <li>Have received multiple bonuses for team and project contributions</li>
+                <li>Create and give brownbag presentations on various topics which have included Git and Code Accessibility </li>
+                <li>Have received multiple bonuses for personal contributions</li>
             </ul>
         )
     }
@@ -112,7 +116,7 @@ const XPTile = ({chosen}) => {
 
     if (chosen === 'PKU') {
         title = 'Intensive Mandarin Studies'
-        link = <a href='https://english.pku.edu.cn/' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>China's Premier University, Peking University</a>
+        link = <a href='https://english.pku.edu.cn/' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>Peking University</a>
         date = '2011 - 2012'
         description = (
             <ul id='xp-ul-container'>
@@ -126,12 +130,19 @@ const XPTile = ({chosen}) => {
 
     return(
         <div id='xp-tile'>
-            <h1 style={{color: '#fff', fontSize: 25}}>
-                {title}{' @ '}<span style={{color: '#a0d6b4'}}>{link}</span>
-            </h1>
-            <h2 style={{color: '#aaa', fontSize: 16, marginTop: -10}}>
-                {date}
-            </h2>
+            <div style={{display: 'flex', width: '100%', alignItems: 'center'}}>
+                <h1 style={{color: '#fff', fontSize: 25, margin: '0'}}>
+                    {title}{' @ '}<span style={{color: '#a0d6b4'}}>{link}</span>
+                </h1>
+                <h2 style={{color: '#aaa', fontSize: 16, marginLeft: 'auto'}}>
+                    {date}
+                </h2>
+            </div>
+            {visitedContext.second && (
+                <Animate from={{y: -1200, opacity: 0}} to={{y: 0, opacity: 1}} delay={500}>
+                    <hr id='hr' />
+                </Animate>
+            )}
             <div style={{width: '100%',  color: '#fff', wordWrap: 'break-word'}}>
                 {description}
             </div>
