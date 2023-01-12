@@ -193,16 +193,17 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  margin-bottom: 200px;
 }
 
 #project-tiles-container {
   min-width: 400px;
   width: 75%;
-  height: 600px;
+  height: 550px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 30px;
 }
 
 #project-tile {
