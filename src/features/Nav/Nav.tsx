@@ -1,7 +1,9 @@
 import landingIcon from '../../assets/hello.png'
+import briefIcon from '../../assets/briefcase.png'
+import xpIcon from '../../assets/experience.png'
+import contactIcon from '../../assets/contactHollow.png'
 
 const Nav = (props) => {
-
 
     return(
         <div id='nav'>
@@ -9,13 +11,13 @@ const Nav = (props) => {
                 <img src={landingIcon} width={40} height={40}/>
             </div>
             <div id='nav-item' onClick={() => props.handleSlide('second')}>
-                <img src={landingIcon} width={40} height={40}/>
+                <img src={xpIcon} width={40} height={40}/>
             </div>
             <div id='nav-item' onClick={() => props.handleSlide('third')}>
-                <img src={landingIcon} width={40} height={40}/>
+                <img src={briefIcon} width={40} height={40}/>
             </div>
             <div id='nav-item' onClick={() => props.handleSlide('fourth')}>
-                <img src={landingIcon} width={40} height={40}/>
+                <img src={contactIcon} width={40} height={40}/>
             </div>
         </div>
     )
