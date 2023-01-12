@@ -1,35 +1,22 @@
-import {NavLink} from 'react-router-dom'
+import landingIcon from '../../assets/hello.png'
 
-const Nav = () => {
+const Nav = (props) => {
 
-
-    const activeStyle = {
-        background: 'cyan',
-        fontSize: 20
-    }
-
-    const inacitveStyle =  {
-        background: 'orange'
-    }
-
-    const getStyle = ({isActive}) => {
-        return isActive ? activeStyle : inacitveStyle
-    }
 
     return(
         <div id='nav'>
-            <NavLink to='/' style={isActive => getStyle(isActive)}>
-                Landing
-            </NavLink>
-            <NavLink to='/projects' style={isActive => getStyle(isActive)}>
-                Projects
-            </NavLink>
-            <NavLink to='/about' style={isActive => getStyle(isActive)}>
-                About
-            </NavLink>
-            <NavLink to='/contact' style={isActive => getStyle(isActive)}>
-                Contact
-            </NavLink>
+            <div id='nav-item' onClick={() => props.handleSlide('first')}>
+                <img src={landingIcon} width={40} height={40}/>
+            </div>
+            <div id='nav-item' onClick={() => props.handleSlide('second')}>
+                <img src={landingIcon} width={40} height={40}/>
+            </div>
+            <div id='nav-item' onClick={() => props.handleSlide('third')}>
+                <img src={landingIcon} width={40} height={40}/>
+            </div>
+            <div id='nav-item' onClick={() => props.handleSlide('fourth')}>
+                <img src={landingIcon} width={40} height={40}/>
+            </div>
         </div>
     )
 }

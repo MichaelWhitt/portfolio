@@ -6,6 +6,7 @@ import myPhoto from '../../../assets/me.jpg'
 import IntroName from './IntroName'
 import Button from '../../Buttons/Button'
 import helloIcon from '../../../assets/hello.png'
+import Nav from '../../Nav/Nav'
 
 
 // TODO: Clear timeout if active page switches for writing function
@@ -60,7 +61,7 @@ const Landing = (props) => {
                     onClick={() => props.handleSlide('first')} 
                     style={props.activePage ==='first' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
-                    {generateEdgeBtnTitle('Greetings')}
+                    {props.windowWidth > 770 ? generateEdgeBtnTitle('GREETINGS') : null}
                     <Animate 
                         from={{y: 2600}} 
                         to={{y: 0}}

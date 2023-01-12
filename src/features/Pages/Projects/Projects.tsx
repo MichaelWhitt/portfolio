@@ -31,9 +31,9 @@ const Projects = (props) => {
                         style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '10%', top: 25}} 
                     />
                     <div id='project-tiles-container'>
-                        <ProjectTile name='Portfolio' />
                         <ProjectTile name='Show Tracker'/>
                         <ProjectTile name='Raid Codex'/>
+                        <ProjectTile name='Portfolio' />
                         <ProjectTile name='Can We Listen?'/>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const Projects = (props) => {
                     onClick={() => props.handleSlide('third')}
                     style={props.activePage ==='third' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
-                    {generateEdgeBtnTitle('PROJECTS')}
+                    {props.windowWidth > 770 ? generateEdgeBtnTitle('PROJECTS') : null}
                     <Animate 
                         from={{y: 2600}} 
                         to={{y: 0}}

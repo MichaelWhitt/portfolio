@@ -10,7 +10,7 @@ const Contact = (props) => {
             <div 
                 id='contact' 
                 className='page'
-            >   
+            >  
                 <div id='contact-content'>
                     <Animate 
                         from={{y: 2600}} 
@@ -40,7 +40,7 @@ const Contact = (props) => {
                     onClick={() => props.handleSlide('fourth')}
                     style={props.activePage ==='fourth' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
-                    {generateEdgeBtnTitle('CONTACT')}
+                    {props.windowWidth > 770 ? generateEdgeBtnTitle('CONTACT') : null}
                     <Animate 
                         from={{y: 2600}} 
                         to={{y: 0}}

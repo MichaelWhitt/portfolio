@@ -19,7 +19,7 @@ const XPTile = ({chosen}) => {
         return(
             <>
                 {visitedContext.second && arr.map( (child, idx) => (
-                    <ul id='xp-ul-container'>
+                    <ul id='xp-ul-container' key={idx}>
                         <Animate from={{x: 50, opacity:0}} to={{x: 0, opacity:1}} delay={idx * 100} config={{duration: 200}} key={child}>
                             <li id='xp-li'>
                                 <div style={{display: 'flex', justifyContent: 'center', marginTop: 9}}>

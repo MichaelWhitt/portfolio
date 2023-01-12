@@ -1,8 +1,9 @@
-import {useState, createContext} from 'react'
+import {useState, createContext, useEffect} from 'react'
 import Landing from "./Landing/Landing"
 import Contact from "./Contact/Contact"
 import Experience from "./Experience/Experience"
 import Projects from "./Projects/Projects"
+import Nav from '../Nav/Nav'
 
 
 //TODO Responsive design, especially where there is text 
@@ -23,7 +24,19 @@ const Stacker = () => {
         third: false,
         fourth: false
     })
+    const getWindowWidth = () => {
+        return window.innerWidth
+    }
+    const [windowWidth, setWindowWidth] = useState(getWindowWidth())
 
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(getWindowWidth())
+    
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+       
+    
     const [slide, setSlide] = useState({
         first: false,
         second: false,
@@ -54,11 +67,13 @@ const Stacker = () => {
     return(
         <PageAnimationContext.Provider value={{visitedContext, setVisitedContext: Function}}>
             <div id='stackParent'>
-                <Landing slide={slide} handleSlide={handleSlide} activePage={activePage} />
-                <Experience slide={slide} handleSlide={handleSlide} activePage={activePage} />
-                <Projects slide={slide} handleSlide={handleSlide} activePage={activePage} />
-                <Contact slide={slide} handleSlide={handleSlide} activePage={activePage} />
+                <Landing slide={slide} handleSlide={handleSlide} activePage={activePage} windowWidth={windowWidth} />
+                <Experience slide={slide} handleSlide={handleSlide} activePage={activePage} windowWidth={windowWidth} />
+                <Projects slide={slide} handleSlide={handleSlide} activePage={activePage} windowWidth={windowWidth} />
+                <Contact slide={slide} handleSlide={handleSlide} activePage={activePage} windowWidth={windowWidth} />
+                <Nav slide={slide} handleSlide={handleSlide} activePage={activePage} windowWidth={windowWidth} />
             </div>
+            
         </PageAnimationContext.Provider>
     )
 }

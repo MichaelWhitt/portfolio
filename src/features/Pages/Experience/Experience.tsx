@@ -17,6 +17,7 @@ const Experience = (props) => {
                 }}
             >   
                 <div id='xp-content'>
+                    <div id='page-title'>Work & Education</div>
                     <Animate 
                         from={{y: 2600}} 
                         to={{y: 0}} 
@@ -34,7 +35,7 @@ const Experience = (props) => {
                     onClick={() => props.handleSlide('second')}
                     style={props.activePage ==='second' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
-                    {generateEdgeBtnTitle('Experience')}
+                    {props.windowWidth > 770 ? generateEdgeBtnTitle('EXPERIENCE') : null}
                     <Animate 
                         from={{y: 2600}} 
                         to={{y: 0}}
