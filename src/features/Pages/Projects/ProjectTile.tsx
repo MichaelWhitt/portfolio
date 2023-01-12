@@ -134,7 +134,7 @@ const ProjectTile = (props) => {
                     </div>
                 )}
             </div>
-            <div>
+            <div id='project-name-and-pic'>
                 <div id='project-tile-name'>
                     {props.name} 
                     <a href={githubLink} target='_blank' rel='noopener noreferrer'>
