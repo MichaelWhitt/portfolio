@@ -12,9 +12,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Stacker />
   }
-]);
-
-
+])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <>
