@@ -9,6 +9,7 @@ import Nav from '../Nav/Nav'
 //TODO Responsive design, especially where there is text (1,2,4 page still need)
 //TODO Add archive to projects
 //TODO Add animations to project screen, possibly video hover to preview
+//TODO Think of a better way to display page titles... or get rid of them
 //TODO (optional) Add archived projects to projects
 //TODO (optional) Add zindex to edgecontainer
 export const PageAnimationContext = createContext({
