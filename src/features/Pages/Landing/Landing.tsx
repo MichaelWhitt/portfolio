@@ -56,7 +56,7 @@ const Landing = (props) => {
                     </div>
                 </div>
                 <div 
-                    className='edgeContainer' 
+                    className='edgeContainer bg-navy' 
                     onClick={() => props.handleSlide('first')} 
                     style={props.activePage ==='first' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >

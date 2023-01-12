@@ -36,7 +36,7 @@ const Contact = (props) => {
                 </div>
                 
                 <div 
-                    className='edgeContainer' 
+                    className='edgeContainer bg-lighter-blue' 
                     onClick={() => props.handleSlide('fourth')}
                     style={props.activePage ==='fourth' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >

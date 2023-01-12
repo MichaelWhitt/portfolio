@@ -30,7 +30,7 @@ const Experience = (props) => {
                     <XPContainer />
                 </div>
                 <div 
-                    className='edgeContainer' 
+                    className='edgeContainer  bg-blue' 
                     onClick={() => props.handleSlide('second')}
                     style={props.activePage ==='second' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >

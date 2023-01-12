@@ -21,7 +21,8 @@ body {
   font-size: 20px;
   padding-top: 20px;
   font-weight: 600;
-  font-family: 'Teko'
+  font-family: 'Teko';
+  z-index: 10000;
 }
 
 .edgeContainer:hover {
@@ -340,6 +341,22 @@ hr:after {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.bg-navy {
+  background: #0A2647
+}
+
+.bg-blue {
+  background: #144272
+}
+
+.bg-light-blue {
+  background: #205295
+}
+
+.bg-lighter-blue {
+  background: #2C74B3
 }
 
 /* Media Queries */

@@ -38,7 +38,7 @@ const Projects = (props) => {
                     </div>
                 </div>
                 <div 
-                    className='edgeContainer' 
+                    className='edgeContainer bg-light-blue' 
                     onClick={() => props.handleSlide('third')}
                     style={props.activePage ==='third' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
