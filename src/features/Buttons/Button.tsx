@@ -7,7 +7,8 @@ interface ButtonInterface {
     style?: object,
     delay?: {
       lag: number
-    }
+    },
+    link?: string
 }
 
 const Button = (props: ButtonInterface) => {
@@ -42,6 +43,28 @@ const Button = (props: ButtonInterface) => {
           }
         })
       }
+
+      if (props.link) {
+        return(
+          <animated.div 
+            id={props.id || ''} 
+            className={'button'} 
+            style={{minWidth: 140, height: 60, border:'2px solid #a0d6b4', background: '#0A2647', ...props.style,  ...animation, ...fadeIn}} 
+            onClick={() => props.onClick()}
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
+        >
+            <a 
+              href={props.link} 
+              target='_blank' 
+              rel="noopener noreferrer" 
+              style={{ display: 'flex', height: '100%', justifyContent: 'center', alignItems: 'center', color: '#a0d6b4', textDecoration: 'none'}}
+            >
+              {props.text}
+            </a>
+        </animated.div>
+        )
+      }
       
 
     return(
@@ -53,9 +76,9 @@ const Button = (props: ButtonInterface) => {
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
         >
-          <span style={{fontSize: 18, fontWeight: 600, color: '#a0d6b4'}}>
-              {props.text}
-          </span>
+            <span style={{fontSize: 18, fontWeight: 600, color: '#a0d6b4'}}>
+                {props.text}
+            </span>
         </animated.button>
     )
 }

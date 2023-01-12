@@ -2,6 +2,7 @@ import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
 import Animate from '../../AnimateWrapper'
 import NavWidget from '../../Nav/NavWidget'
 import contactIcon from '../../../assets/contactHollow.png'
+import Button from '../../Buttons/Button'
 const Contact = (props) => {
 
     return(
@@ -21,6 +22,17 @@ const Contact = (props) => {
                         to={{x: 0}} 
                         style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '14%', top: 25}} 
                     />
+                    <div className='center' style={{flexDirection: 'column'}}>
+                        <h1 style={{color: '#a0d6b4'}}>Get in Touch</h1>
+                        <p style={{width: '50%', fontSize: 25, textAlign: 'center'}}>
+                            Thank you very much for your interest in reaching out. Feel free to click the email button 
+                            below, or use this address: <span style={{color: '#a0d6b4'}}>connect@michaeldwhitt.com</span>.
+                        </p>
+                        <div>I look forward to hearing from you!</div>
+                        <div>
+                            <Button text={'Email Me'} link={'mailto:connect@michaeldwhitt.com'} onClick={() => {}} />
+                        </div>
+                    </div>
                 </div>
                 
                 <div 
