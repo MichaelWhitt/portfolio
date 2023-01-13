@@ -96,7 +96,7 @@ const XPTile = ({chosen}) => {
     }
 
     if (chosen === 'UNNC') {
-        title = 'MSc in Business'
+        title = 'MSc'
         link = <a href='https://www.nottingham.edu.cn/en/index.aspx' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>University of Nottingham</a>
         date = 'August 2017 - August 2019'
         description = animateXPList([
@@ -108,7 +108,7 @@ const XPTile = ({chosen}) => {
     }
 
     if (chosen === 'UNL') {
-        title = 'BA Global Studies'
+        title = 'BA'
         link = <a href='https://www.unl.edu/' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>University of Nebraska</a>
         date = '2009 - 2014'
         description = animateXPList([
@@ -121,7 +121,7 @@ const XPTile = ({chosen}) => {
     }
 
     if (chosen === 'PKU') {
-        title = 'Intensive Mandarin Studies'
+        title = 'Mandarin Studies'
         link = <a href='https://english.pku.edu.cn/' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>Peking University</a>
         date = '2011 - 2012'
         description = animateXPList([
