@@ -12,6 +12,9 @@ const Contact = (props) => {
                 className='page'
             >  
                 <div id='contact-content'>
+                    <div id='page-title'>
+                        Get in Touch
+                    </div>
                     <Animate 
                         from={{y: 2600}} 
                         to={{y: 0}} 
@@ -23,7 +26,6 @@ const Contact = (props) => {
                         style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '14%', top: 25}} 
                     />
                     <div className='center' style={{flexDirection: 'column'}}>
-                        <h1 style={{color: '#a0d6b4'}}>Get in Touch</h1>
                         <p style={{width: '50%', fontSize: 25, textAlign: 'center'}}>
                             Thank you very much for your interest in reaching out. Feel free to click the email button 
                             below, or use this address: <span style={{color: '#a0d6b4'}}>connect@michaeldwhitt.com</span>.

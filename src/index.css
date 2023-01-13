@@ -520,6 +520,8 @@ hr:after {
     display: none;
   }
 
+  /*Projects Page*/
+
   #project-tile {
     min-width: 200px;
     min-height: 200px;
@@ -572,9 +574,15 @@ hr:after {
     align-items: center;
   }
 
+  /*Contact Page*/
+
+  
+
+  /*Other*/
   #page-title {
     font-size: 20px;
     top: 10px;
     right: 50px;
   }
+
 }
