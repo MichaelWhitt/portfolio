@@ -94,6 +94,14 @@ body {
   padding: 10%;
 }
 
+#typed-intro {
+  font-size: 30px;
+  margin-top: 40px;
+  color: #aaa;
+  width: 60%;
+  font-weight: 600
+}
+
 #xp {
   background: #144272;
   width: 92%;
@@ -409,6 +417,28 @@ hr:after {
 
   #nav {
     display: flex
+  }
+
+  #typed-intro {
+    font-size: 16px;
+    width: 80%;
+    padding-right: 80px;
+  }
+
+  #my-photo {
+    bottom: 90px;
+    text-align: center;
+    top: initial !important;
+    margin-left: auto;
+  }
+
+  #my-photo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #explore-btn {
+    bottom: 100px !important;
   }
 
   #project-tile {

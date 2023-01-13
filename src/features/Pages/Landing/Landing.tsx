@@ -49,10 +49,10 @@ const Landing = (props) => {
                         style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '2%', top: 25}} 
                     />
                     <IntroName />
-                    <p style={{fontSize: 30, marginTop: 40, color: '#aaa', width: '60%', fontWeight: 600}}>
+                    <p id='typed-intro'>
                         {text}{text.length !== paragraphText.length ? '_' : ''}
                     </p>
-                    <div style={{position: 'absolute', bottom: '5%', left: '10%'}}>
+                    <div id='explore-btn' style={{position: 'absolute', bottom: '5%', left: '10%'}}>
                         <Button onClick={() => props.handleSlide('second')} text={'Explore'} delay={{lag: 3000}} />
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const Landing = (props) => {
                     </Animate>
                 </div>
                 <NavWidget handleSlide={props.handleSlide} />
-                <Animate from={{opacity: 0}} to={{opacity: 1}} delay={7000} config={{duration: 2000}} style={{position: 'absolute', right: '15%', top: '20%'}}>
+                <Animate id='my-photo' from={{opacity: 0}} to={{opacity: 1}} delay={7000} config={{duration: 2000}} style={{position: 'absolute', right: '15%', top: '20%'}}>
                     <img src={myPhoto} width={150} height={150} style={{borderRadius: '50%'}} />
                 </Animate>
             </div>
