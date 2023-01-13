@@ -6,7 +6,7 @@ import myPhoto from '../../../assets/me.jpg'
 import IntroName from './IntroName'
 import Button from '../../Buttons/Button'
 import helloIcon from '../../../assets/hello.png'
-import Nav from '../../Nav/Nav'
+import Nav from '../../Nav/MobileNav'
 
 
 // TODO: Clear timeout if active page switches for writing function

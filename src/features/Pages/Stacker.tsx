@@ -3,7 +3,7 @@ import Landing from "./Landing/Landing"
 import Contact from "./Contact/Contact"
 import Experience from "./Experience/Experience"
 import Projects from "./Projects/Projects"
-import Nav from '../Nav/Nav'
+import MobileNav from '../Nav/MobileNav'
 
 
 //TODO Responsive design, especially where there is text (1,2,4 page still need)
@@ -71,9 +71,8 @@ const Stacker = () => {
                 <Experience slide={slide} handleSlide={handleSlide} activePage={activePage} windowWidth={windowWidth} />
                 <Projects slide={slide} handleSlide={handleSlide} activePage={activePage} windowWidth={windowWidth} />
                 <Contact slide={slide} handleSlide={handleSlide} activePage={activePage} windowWidth={windowWidth} />
-                <Nav slide={slide} handleSlide={handleSlide} activePage={activePage} windowWidth={windowWidth} />
-            </div>
-            
+                <MobileNav slide={slide} handleSlide={handleSlide} activePage={activePage} windowWidth={windowWidth} />
+            </div>  
         </PageAnimationContext.Provider>
     )
 }
