@@ -43,12 +43,15 @@ const Scrollbar = ({chosenIndex}) => {
     }
   
     return(
-      <div style={{
-        height: 600,
-        width: 0,
-        background: '#afa',
-        marginRight: 30
-      }}>
+      <div 
+        style={{
+          height: 600,
+          width: 0,
+          background: '#afa',
+          marginRight: 30
+        }}
+        id='animated-xp-logo'
+      >
         {visitedContext.second && (
           <Animate from={{y: 500, x: -25} } to={[{y: 0}, {x:0}]} delay={500} config={{duration: 600}} style={{height: '100%', borderRadius: 50}} >
             <img className='thumb' src={src} style={{top: position + '%', width: 40, height: 40, padding: 2, borderRadius: 50}} />

@@ -118,11 +118,29 @@ body {
   margin-top: 50px;
 }
 
-.xp-display {
+#xp-display {
   width: 60%;
   height: 600px;
   display: flex;
   justify-content: center;
+}
+
+#xp-container {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#xp-tile-title-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+#xp-tile-title-date {
+  margin: 0 auto;
 }
 
 #xp-container-title {
@@ -135,7 +153,7 @@ body {
   font-family: 'Teko', sans-serif
 }
 
-.xp-sidebar {
+#xp-sidebar {
   height: 600px;
   width: 120px;
   display: flex;
@@ -152,13 +170,13 @@ body {
   font-size: 20px;
 }
 
-.xp-list {
+#xp-list {
   height: 50%;
   display: flex;
   flex-direction: column;
 }
 
-.xp-list div {
+#xp-list div {
   flex: 1;
 }
 
@@ -439,6 +457,67 @@ hr:after {
 
   #explore-btn {
     bottom: 170px !important;
+  }
+
+  /*Experience Page*/
+
+  #xp-content {
+    margin-top: 20px !important;
+  }
+
+  #xp-container {
+    padding: 0px 0 0 15px
+  }
+
+  #xp-container > div {
+    justify-content: initial !important;
+    margin: 0 !important
+  }
+
+  #xp-sidebar {
+    height: 80% !important;
+    margin-right: 5px;
+    width: 60px;
+  }
+
+  #xp-display {
+    width: 75% !important;
+    height: 100%;
+    justify-content: inherit !important;
+  }
+
+  .xp-item {
+    font-size: 12px !important
+  }
+
+  #xp-tile-title {
+    font-size: 14px !important;
+  }
+
+  #xp-tile-title-date {
+    font-size: 12px !important;
+  }
+
+  #xp-ul-container {
+    padding-left: 5px;
+    margin: 0px;
+  }
+
+  #xp-li {
+    font-size: 12px !important
+  }
+
+  #xp-li span {
+    margin-top: 3px !important;
+  }
+
+  #xp-sidebar img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #animated-xp-logo {
+    display: none;
   }
 
   #project-tile {

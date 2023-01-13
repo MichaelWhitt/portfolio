@@ -22,9 +22,9 @@ const XPTile = ({chosen}) => {
                     <ul id='xp-ul-container' key={idx}>
                         <Animate from={{x: 50, opacity:0}} to={{x: 0, opacity:1}} delay={idx * 100} config={{duration: 200}} key={child}>
                             <li id='xp-li'>
-                                <div style={{display: 'flex', justifyContent: 'center', marginTop: 9}}>
+                                <span style={{display: 'block', marginTop: 9}}>
                                     <span id='list-bullet' />
-                                </div>
+                                </span>
                                 {child}
                             </li>
                         </Animate>
@@ -41,7 +41,6 @@ const XPTile = ({chosen}) => {
         description = animateXPList([
             'Write performant and maintainable code for ClearC2 CRM Web and Mobile projects and those of our clients, ranging from Fortune 500s to SMEs',
             'Work with a diverse set of tools that suit project needs such as React, Javascript, Typescript, Git/Github, Redux, Remix, SQL, CSS, Apache Cordova, and numerous NPM and internal packages',
-            'Attend and collaborate in various internal and external meetings with people from all aspects of development and design',
             'Create and give brownbag presentations on various topics which have included Git and Code Accessibility',
             'Have received multiple bonuses for personal contributions'
         ])
@@ -135,11 +134,11 @@ const XPTile = ({chosen}) => {
 
     return(
         <div id='xp-tile'>
-            <div style={{display: 'flex', width: '100%', alignItems: 'center'}}>
-                <h1 style={{color: '#fff', fontSize: 25, margin: '0'}}>
+            <div id='xp-tile-title-container'>
+                <h1 id='xp-tile-title' style={{color: '#fff', fontSize: 25, margin: 0}}>
                     {title}{' @ '}<span style={{color: '#a0d6b4'}}>{link}</span>
                 </h1>
-                <h2 style={{color: '#aaa', fontSize: 16, marginLeft: 'auto'}}>
+                <h2 id='xp-tile-title-date' style={{color: '#aaa', fontSize: 16, marginLeft: 'auto'}}>
                     {date}
                 </h2>
             </div>
@@ -148,7 +147,7 @@ const XPTile = ({chosen}) => {
                     <hr id='hr' />
                 </Animate>
             )}
-            <div style={{width: '100%',  color: '#fff', wordWrap: 'break-word'}}>
+            <div id='xp-tile-description' style={{width: '100%',  color: '#fff', wordWrap: 'break-word'}}>
                 {description}
             </div>
         </div>
