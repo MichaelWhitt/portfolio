@@ -420,13 +420,13 @@ hr:after {
   }
 
   #typed-intro {
-    font-size: 16px;
+    font-size: 18px;
     width: 80%;
     padding-right: 80px;
   }
 
   #my-photo {
-    bottom: 90px;
+    bottom: 140px;
     text-align: center;
     top: initial !important;
     margin-left: auto;
@@ -438,7 +438,7 @@ hr:after {
   }
 
   #explore-btn {
-    bottom: 100px !important;
+    bottom: 170px !important;
   }
 
   #project-tile {
