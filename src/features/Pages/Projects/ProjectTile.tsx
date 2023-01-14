@@ -149,8 +149,8 @@ const ProjectTile = (props) => {
                             width={'100%'} 
                             height={'100%'} 
                             src={src} 
-                            onMouseOver={e => e.target.play()}
-                            onMouseOut={e => e.target.pause()}
+                            onMouseOver={e => e.currentTarget.play()}
+                            onMouseOut={e => e.currentTarget.pause()}
                         />
                     </div>
                 </div>
