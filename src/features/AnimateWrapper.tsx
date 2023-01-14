@@ -11,7 +11,9 @@ interface AnimateProps {
     children?: JSX.Element,
     style?: {},
     id?: string,
-    className?: string
+    className?: string,
+    mouseEnter?: Function,
+    index?: number
 }
 
 const Animate = (props: AnimateProps) => {
@@ -28,7 +30,7 @@ const Animate = (props: AnimateProps) => {
     }))
 
     return (
-        <animated.div style={{...style, ...animation}} className={className} id={id}>
+        <animated.div key={textContent} style={{...style, ...animation}} className={className} id={id} onMouseEnter={ props.mouseEnter ? () => props.mouseEnter?.(props.index) : () => {}}>
             {children ? children : textContent}
         </animated.div>
     )

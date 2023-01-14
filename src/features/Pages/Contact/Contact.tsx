@@ -3,7 +3,65 @@ import Animate from '../../AnimateWrapper'
 import NavWidget from '../../Nav/NavWidget'
 import contactIcon from '../../../assets/contactHollow.png'
 import Button from '../../Buttons/Button'
+import {useContext, useState} from 'react'
+import { PageAnimationContext } from '../Stacker'
+
 const Contact = (props) => {
+    const [msg, setMsg] = useState(['R', 'E', 'A', 'C', 'H', ' ', 'O', 'U', 'T'])
+    const {visitedContext} = useContext(PageAnimationContext)
+
+    const handleMouseEnter = (idx: number) => {
+        
+        const newArr = [...msg]
+        switch(idx) {
+            case 0:
+                newArr.splice(idx, 1, 'T' )
+                break
+            case 1:
+                newArr.splice(idx, 1, 'H' )
+                break
+            case 2:
+                newArr.splice(idx, 1, 'A' )
+                break
+            case 3:
+                newArr.splice(idx, 1, 'N' )
+                break
+            case 4:
+                newArr.splice(idx, 1, 'K' )
+                break
+            case 6:
+                newArr.splice(idx, 1, 'Y' )
+                break
+            case 7:
+                newArr.splice(idx, 1, 'O' )
+                break
+            case 8:
+                newArr.splice(idx, 1, 'U' )
+                break        
+        }
+        setMsg(newArr)
+    }
+
+    const generateMsg = () => {
+        return msg.map((item, idx) => {
+            return(
+                <Animate
+                    key={idx} 
+                    textContent={item} 
+                    from={{y: -20, opacity: 0}} 
+                    to={{y: 0, opacity: 1}} 
+                    delay={1000 + (idx * 150)} 
+                    style={{
+                        whiteSpace: 'pre', 
+                        background: idx !== 5 ? `rgb(${Math.floor(Math.random() * 155 + 100)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 155 + 100)})` : null
+                    }}
+                    className={idx !== 5 ? 'animated-item-text' : 'prevent-animated-item-text'}
+                    mouseEnter={handleMouseEnter}
+                    index={idx}
+                />
+            )
+        })
+    }
 
     return(
         <>
@@ -13,7 +71,7 @@ const Contact = (props) => {
             >  
                 <div id='contact-content'>
                     <div id='page-title'>
-                        Get in Touch
+                        Touch Base
                     </div>
                     <Animate 
                         from={{y: 2600}} 
@@ -25,22 +83,20 @@ const Contact = (props) => {
                         to={{x: 0}} 
                         style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '14%', top: 25}} 
                     />
-                    <div className='center' style={{flexDirection: 'column'}}>
-                        <p style={{width: '50%', fontSize: 25, textAlign: 'center'}}>
-                            Thank you very much for your interest in reaching out. Feel free to click the email button 
-                            below, or use this address: <span style={{color: '#a0d6b4'}}>connect@michaeldwhitt.com</span>.
-                        </p>
-                        <div>I look forward to hearing from you!</div>
-                        <div>
+                   <div>
+                   <div style={{display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)'}}>
+                            {visitedContext.fourth && generateMsg()}
+                        </div>
+                        <div style={{width: 200, margin: '0 auto', marginTop: 50}}>
                             <Button text={'Email Me'} link={'mailto:connect@michaeldwhitt.com'} onClick={() => {}} />
                         </div>
-                    </div>
+                   </div>
                 </div>
                 
                 <div 
                     className='edgeContainer bg-lighter-blue' 
                     onClick={() => props.handleSlide('fourth')}
-                    style={props.activePage ==='fourth' ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
+                    style={visitedContext.fourth ? {fontWeight: 800, fontSize: 28} : {transitionDuration: '.3s'}}
                 >
                     {props.windowWidth > 770 ? generateEdgeBtnTitle('CONTACT') : null}
                     <Animate 
@@ -51,7 +107,6 @@ const Contact = (props) => {
                         <img src={contactIcon} width={40} height={40}/>
                     </Animate>
                 </div>
-                <NavWidget handleSlide={props.handleSlide} />
                 
             </div>
         </>
