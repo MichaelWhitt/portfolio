@@ -1,7 +1,3 @@
-import showtrackerImg from '../../../assets/showtracker.png'
-import raidImg from '../../../assets/raid.png'
-import portfolioImg from '../../../assets/portfolio.png'
-import canwelistenImg from '../../../assets/canwelisten.png'
 import reactLogo from '../../../assets/reactlogo.svg'
 import typescriptLogo from '../../../assets/typescriptlogo.png'
 import javascriptLogo from '../../../assets/jslogo.png'
@@ -13,6 +9,10 @@ import bootstrapLogo from '../../../assets/bootstraplogo.png'
 import reactspringLogo from '../../../assets/reactspringlogo.png'
 import githubLogo from '../../../assets/github.png'
 import eyeLogo from '../../../assets/eye.png'
+import showVid from '../../../assets/showVid.mp4'
+import raidVid from '../../../assets/raidVid.mp4'
+import portVid from '../../../assets/portVid.mp4'
+import cwlVid from '../../../assets/canwelistenVid.mp4'
 
 
 
@@ -24,25 +24,25 @@ const ProjectTile = (props) => {
 
     switch(props.name) {
         case 'Portfolio': 
-            src = portfolioImg
+            src = portVid
             tools = ['react', 'netlify', 'typescript', 'react-spring']
             githubLink = ''
             viewLink = 'https://michaeldwhitt.com'
             break
         case 'Show Tracker': 
-            src = showtrackerImg
+            src = showVid
             tools = ['react', 'redux', 'fauna', 'netlify', 'javascript']
             githubLink = 'https://github.com/MichaelWhitt/show-tracker'
             viewLink = 'https://mwmovies.netlify.app/'
             break
         case 'Raid Codex':
-            src = raidImg
+            src = raidVid
             tools = ['react', 'fauna', 'netlify', 'javascript']
             githubLink = 'https://github.com/MichaelWhitt/rsl-shard-tracker'
             viewLink = 'https://rsl-codex.netlify.app/'
             break
         case 'Can We Listen?':
-            src = canwelistenImg
+            src = cwlVid
             tools = ['react', 'bootstrap', 'javascript', 'netlify']
             githubLink = 'https://github.com/MichaelWhitt/CanWeListen2.0'
             viewLink = 'https://canwelisten.netlify.app/'
@@ -95,8 +95,8 @@ const ProjectTile = (props) => {
                 {includesBootstrap ? (
                     <div className='center'>
                         <div className='tooltip'>
-                                <span className='tooltiptext'>Bootstrap</span>
-                            </div>
+                            <span className='tooltiptext'>Bootstrap</span>
+                         </div>
                         <img src={bootstrapLogo} width={40} height={40}/>
                     </div>
                     ) : (
@@ -110,7 +110,7 @@ const ProjectTile = (props) => {
                 {includesFauna && (
                     <div className='center'>
                         <div className='tooltip'>
-                                <span className='tooltiptext'>Fauna DB</span>
+                            <span className='tooltiptext'>Fauna DB</span>
                         </div>
                         <img src={faunaLogo} width={40} height={40}/>
                     </div>
@@ -118,7 +118,7 @@ const ProjectTile = (props) => {
                 {includesNetlify && (
                     <div className='center'>
                         <div className='tooltip'>
-                                <span className='tooltiptext'>Netlify</span>
+                            <span className='tooltiptext'>Netlify</span>
                         </div>
                         <img src={netlifyLogo} width={30} height={30}/>
                     </div>
@@ -144,7 +144,15 @@ const ProjectTile = (props) => {
                 </div>
                 <div id='project-tile-inner'>
                     <div id='project-pic'>
-                        <img src={src} width={'100%'} height={'100%'} style={{borderRadius: 12}}/>
+                        {/* <img src={src} width={'100%'} height={'100%'} style={{borderRadius: 12}} /> */}
+                        <video 
+                            width={'100%'} 
+                            height={'100%'} 
+                            src={src} onMouseOver={event =>{ 
+                                event.playbackRate = 0.5
+                                event.target.play()
+                            }}
+                            onMouseOut={event => event.target.pause()}/>
                     </div>
                 </div>
             </div>
