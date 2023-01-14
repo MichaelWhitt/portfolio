@@ -9,7 +9,7 @@ import bootstrapLogo from '../../../assets/bootstraplogo.png'
 import reactspringLogo from '../../../assets/reactspringlogo.png'
 import githubLogo from '../../../assets/github.png'
 import eyeLogo from '../../../assets/eye.png'
-import showTVid from '/Development/portfolio2023/src/assets/showvid.mp4'
+import showVid from '../../../assets/showVid.mp4'
 import raidVid from '../../../assets/raidVid.mp4'
 import portVid from '../../../assets/portVid.mp4'
 import cwlVid from '../../../assets/canwelistenVid.mp4'
@@ -30,7 +30,7 @@ const ProjectTile = (props) => {
             viewLink = 'https://michaeldwhitt.com'
             break
         case 'Show Tracker': 
-            src = showTVid
+            src = showVid
             tools = ['react', 'redux', 'fauna', 'netlify', 'javascript']
             githubLink = 'https://github.com/MichaelWhitt/show-tracker'
             viewLink = 'https://mwmovies.netlify.app/'
@@ -150,8 +150,8 @@ const ProjectTile = (props) => {
                             height={'100%'} 
                             src={src}
                             style={{borderRadius: 12}}
-                            // onMouseOver={e => e.currentTarget.play()}
-                            // onMouseOut={e => e.currentTarget.pause()}
+                            onMouseOver={e => e.currentTarget.play()}
+                            onMouseOut={e => e.currentTarget.pause()}
                         />
                     </div>
                 </div>
