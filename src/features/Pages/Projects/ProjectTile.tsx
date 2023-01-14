@@ -148,15 +148,13 @@ const ProjectTile = (props) => {
                         <video 
                             width={'100%'} 
                             height={'100%'} 
-                            src={src} onMouseOver={event =>{ 
-                                event.playbackRate = 0.5
-                                event.target.play()
-                            }}
-                            onMouseOut={event => event.target.pause()}/>
+                            src={src} 
+                            onMouseOver={e => e.target.play()}
+                            onMouseOut={e => e.target.pause()}
+                        />
                     </div>
                 </div>
             </div>
-            
         </div>
     )
 }
