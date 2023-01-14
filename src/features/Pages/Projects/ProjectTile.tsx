@@ -9,10 +9,10 @@ import bootstrapLogo from '../../../assets/bootstraplogo.png'
 import reactspringLogo from '../../../assets/reactspringlogo.png'
 import githubLogo from '../../../assets/github.png'
 import eyeLogo from '../../../assets/eye.png'
-import showVid from './showvid.mp4'
-import raidVid from './raidvid.mp4'
-import portVid from './portvid.mp4'
-import cwlVid from './canwelistenvid.mp4'
+import showVid from '../../../assets/showvid.mp4'
+import raidVid from '../../../assets/raidvid.mp4'
+import portVid from '../../../assets/portvid.mp4'
+import cwlVid from '../../../assets/canwelistenvid.mp4'
 
 
 
