@@ -31,7 +31,7 @@ const Projects = (props) => {
                         to={{x: 0}} 
                         style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '10%', top: 25}} 
                     />
-                    <div id='project-tiles-container' style={{marginBottom: 50}}>
+                    <div id='project-tiles-container'>
                         <ProjectTile name='Show Tracker'/>
                         <ProjectTile name='Raid Codex'/>
                         <ProjectTile name='Portfolio' />
