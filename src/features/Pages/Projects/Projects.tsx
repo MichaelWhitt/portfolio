@@ -18,7 +18,7 @@ const Projects = (props) => {
                 }}
             >
                 <div id='projects-content'>
-                    <div id='page-title'>
+                    <div id='page-title' style={{left: '11%'}}>
                         Recent Projects
                     </div>
                     <Animate 

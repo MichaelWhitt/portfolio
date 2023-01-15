@@ -17,7 +17,9 @@ const Experience = (props) => {
                 }}
             >   
                 <div id='xp-content'>
-                    <div id='page-title'>Work & Education</div>
+                    <div id='page-title' style={{left: '7%'}}>
+                        Work & Education
+                    </div>
                     <Animate 
                         from={{y: 2600}} 
                         to={{y: 0}} 

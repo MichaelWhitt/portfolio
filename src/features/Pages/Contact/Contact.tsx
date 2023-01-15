@@ -70,7 +70,7 @@ const Contact = (props) => {
                 className='page'
             >  
                 <div id='contact-content'>
-                    <div id='page-title'>
+                    <div id='page-title' style={{left: '15%'}}>
                         Touch Base
                     </div>
                     <Animate 
