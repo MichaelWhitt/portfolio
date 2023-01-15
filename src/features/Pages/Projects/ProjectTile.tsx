@@ -54,7 +54,6 @@ const ProjectTile = (props) => {
     const includesFauna = tools.includes('fauna')
     const includesNetlify = tools.includes('netlify')
     const includesTS = tools.includes('typescript')
-    const includesJS = tools.includes('javascript')
     const includesBootstrap = tools.includes('bootstrap')
     const includesReactSpring = tools.includes('react-spring')
 
@@ -144,12 +143,12 @@ const ProjectTile = (props) => {
                 </div>
                 <div id='project-tile-inner'>
                     <div id='project-pic'>
-                        {/* <img src={src} width={'100%'} height={'100%'} style={{borderRadius: 12}} /> */}
                         <video 
                             width={'100%'} 
                             height={'100%'} 
                             src={src}
                             style={{borderRadius: 12}}
+                            onClick={e => e.currentTarget.play()}
                             onMouseOver={e => e.currentTarget.play()}
                             onMouseOut={e => e.currentTarget.pause()}
                         />
