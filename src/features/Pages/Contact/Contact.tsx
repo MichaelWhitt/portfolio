@@ -1,6 +1,6 @@
 import generateEdgeBtnTitle from '../../../utils/generateEdgeBtnTitle'
 import Animate from '../../AnimateWrapper'
-import NavWidget from '../../Nav/NavWidget'
+import linkedIcon from '../../../assets/linked.png'
 import contactIcon from '../../../assets/contactHollow.png'
 import Button from '../../Buttons/Button'
 import {useContext, useState} from 'react'
@@ -87,8 +87,11 @@ const Contact = (props) => {
                    <div style={{display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)'}}>
                             {visitedContext.fourth && generateMsg()}
                         </div>
-                        <div style={{width: 200, margin: '0 auto', marginTop: 50}}>
+                        <div style={{width: 200, margin: '0 auto', marginTop: 50, display: 'flex', gap: 10, alignItems: 'center', height: 60}}>
                             <Button text={'Email Me'} link={'mailto:connect@michaeldwhitt.com'} onClick={() => {}} />
+                            <a href='https://www.linkedin.com/in/michaeldwhitt/' target='_blank' rel="noopener noreferrer" style={{height: '100%', width: '100%', background: '#0A2647', borderRadius: 12, border: '2px solid #a0d6b4'}}>
+                                <img src={linkedIcon} width={60} height={60} />
+                            </a>
                         </div>
                    </div>
                 </div>
