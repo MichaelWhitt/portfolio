@@ -50,7 +50,7 @@ const Contact = (props) => {
                     textContent={item} 
                     from={{y: -20, opacity: 0}} 
                     to={{y: 0, opacity: 1}} 
-                    delay={1000 + (idx * 150)} 
+                    delay={500 + (idx * 150)} 
                     style={{
                         whiteSpace: 'pre', 
                         background: idx !== 5 ? `rgb(${Math.floor(Math.random() * 155 + 100)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 155 + 100)})` : null
