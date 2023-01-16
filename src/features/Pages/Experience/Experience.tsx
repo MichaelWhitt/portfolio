@@ -3,6 +3,8 @@ import NavWidget from '../../Nav/NavWidget'
 import XPContainer from './XPContainer'
 import Animate from '../../AnimateWrapper'
 import xpIcon from '../../../assets/experience.png'
+import resumeIcon from '../../../assets/resumeIcon.png'
+import resumePDF from '../../../assets/Michael-Whitt-Resume-2023.pdf'
 
 const Experience = (props) => {
 
@@ -15,8 +17,13 @@ const Experience = (props) => {
                     transition: 'transform 300ms ease-in-out .3s',
                     transform: props.slide.second ? 'translateX(-92%)' : 'translateX(0%)'
                 }}
-            >   
+            > 
                 <div id='xp-content'>
+                    <div style={{position: 'absolute', top: 20, right: 80, justifyContent: 'center', alignItems: 'center'}}>
+                        <a href={resumePDF} download='michael-whitt-resume-2023'>
+                            <img src={resumeIcon} width={60} height={60} />
+                        </a>
+                    </div>
                     <div id='page-title' style={{left: '7%'}}>
                         Work & Education
                     </div>
