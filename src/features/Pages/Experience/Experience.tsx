@@ -19,7 +19,7 @@ const Experience = (props) => {
                 }}
             > 
                 <div id='xp-content'>
-                    <div style={{position: 'absolute', top: 20, right: 80, justifyContent: 'center', alignItems: 'center'}}>
+                    <div id='download-pdf'>
                         <a href={resumePDF} download='michael-whitt-resume-2023'>
                             <img src={resumeIcon} width={60} height={60} />
                         </a>

@@ -216,6 +216,25 @@ body {
   width: 10px;
 }
 
+#download-pdf {
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+#download-pdf img {
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border-bottom: 5px solid transparent;
+}
+
+#download-pdf img:hover {
+  border-bottom: 4px solid #a0d6b4;
+  transition-duration: .8s;
+}
+
 .thumb {
   margin-top: 6px;
   width: 20px;
