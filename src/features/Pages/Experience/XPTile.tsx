@@ -40,7 +40,7 @@ const XPTile = ({chosen}) => {
         date = 'October 2021 - Present'
         description = animateXPList([
             'Write performant and maintainable code for ClearC2 CRM Web and Mobile projects and those of our clients, ranging from Fortune 500s to SMEs',
-            'Work with a diverse set of tools that suit project needs such as React, Javascript, Typescript, Git/Github, Redux, Remix, SQL, CSS, Apache Cordova, and numerous NPM and internal packages',
+            'Work with a diverse set of tools that suit project needs such as React, Javascript, Typescript, Git/Github, Redux, Remix, SQL, HTML, CSS, Apache Cordova, and numerous NPM and internal packages',
             'Create and give brownbag presentations on various topics which have included Git and Code Accessibility',
             'Have received multiple bonuses for personal contributions'
         ])
