@@ -219,9 +219,28 @@ body {
 #download-pdf {
   position: absolute;
   top: 20px;
+  right: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+#download-pdf-note {
+  position: absolute;
+  top: 5px;
   right: 80px;
   justify-content: center;
   align-items: center;
+  font-size: 10px;
+  color: #a0d6b4;
+}
+
+@media only screen and (max-width: 600px) {
+  #download-pdf {
+    right: 40px;
+  }
+  #download-pdf-note {
+    right: 30px;
+  }
 }
 
 #download-pdf img {

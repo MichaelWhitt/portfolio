@@ -32,9 +32,9 @@ const Projects = (props) => {
                         style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '10%', top: 25}} 
                     />
                     <div id='project-tiles-container'>
+                        <ProjectTile name='Blog Template' />
                         <ProjectTile name='Show Tracker'/>
                         <ProjectTile name='Raid Codex'/>
-                        <ProjectTile name='Portfolio' />
                         <ProjectTile name='Can We Listen?'/>
                         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                             <a href='https://github.com/MichaelWhitt' className='center' style={{textDecoration: 'none', fontSize: 20, color: '#a0d6b4'}} target='_blank' rel='noopener noreferrer'>

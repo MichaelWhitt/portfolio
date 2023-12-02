@@ -7,11 +7,12 @@ import faunaLogo from '../../../assets/Fauna_Logo.svg'
 import netlifyLogo from '../../../assets/netlifylogo.png'
 import bootstrapLogo from '../../../assets/bootstraplogo.png'
 import reactspringLogo from '../../../assets/reactspringlogo.png'
-import githubLogo from '../../../assets/github.png'
+import firebaseLogo from '../../../assets/firebaselogo.png'
+import tailwindLogo from '../../../assets/tailwindlogo.png'
 import eyeLogo from '../../../assets/eye.png'
 import showVid from './showvid.mp4'
 import raidVid from './raidvid.mp4'
-import portVid from './portvid.mp4'
+import blogVid from './rbt.mp4'
 import cwlVid from './canwelistenvid.mp4'
 
 
@@ -23,28 +24,24 @@ const ProjectTile = (props) => {
     let githubLink = ''
 
     switch(props.name) {
-        case 'Portfolio': 
-            src = portVid
-            tools = ['react', 'netlify', 'typescript', 'react-spring']
-            githubLink = ''
-            viewLink = 'https://michaeldwhitt.com'
+        case 'Blog Template': 
+            src = blogVid
+            tools = ['react', 'firebase', 'typescript', 'tailwind']
+            viewLink = 'https://react-blog-template-db.web.app.com'
             break
         case 'Show Tracker': 
             src = showVid
             tools = ['react', 'redux', 'fauna', 'netlify', 'javascript']
-            githubLink = 'https://github.com/MichaelWhitt/show-tracker'
             viewLink = 'https://mwmovies.netlify.app/'
             break
         case 'Raid Codex':
             src = raidVid
             tools = ['react', 'fauna', 'netlify', 'javascript']
-            githubLink = 'https://github.com/MichaelWhitt/rsl-shard-tracker'
             viewLink = 'https://rsl-codex.netlify.app/'
             break
         case 'Can We Listen?':
             src = cwlVid
             tools = ['react', 'bootstrap', 'javascript', 'netlify']
-            githubLink = 'https://github.com/MichaelWhitt/CanWeListen2.0'
             viewLink = 'https://canwelisten.netlify.app/'
             break
     }
@@ -56,6 +53,8 @@ const ProjectTile = (props) => {
     const includesTS = tools.includes('typescript')
     const includesBootstrap = tools.includes('bootstrap')
     const includesReactSpring = tools.includes('react-spring')
+    const includesFirebase = tools.includes('firebase')
+    const includesTailwind = tools.includes('tailwind')
 
     return(
         <div id='project-tile'>
@@ -98,7 +97,15 @@ const ProjectTile = (props) => {
                          </div>
                         <img src={bootstrapLogo} width={40} height={40}/>
                     </div>
-                    ) : (
+                    ) : includesTailwind ? (
+                            <div className='center'>
+                                <div className='tooltip'>
+                                    <span className='tooltiptext'>Tailwind</span>
+                                </div>
+                                <img src={tailwindLogo} width={40} height={30}/>
+                            </div>
+                    )
+                    : (
                         <div className='center'>
                             <div className='tooltip'>
                                 <span className='tooltiptext'>CSS 3</span>
@@ -122,6 +129,14 @@ const ProjectTile = (props) => {
                         <img src={netlifyLogo} width={30} height={30}/>
                     </div>
                 )}
+                {includesFirebase && (
+                    <div className='center'>
+                        <div className='tooltip'>
+                            <span className='tooltiptext'>Firebase</span>
+                        </div>
+                        <img src={firebaseLogo} width={50} height={50}/>
+                    </div>
+                )}
                 {includesReactSpring && (
                     <div className='center'>
                         <div className='tooltip'>
@@ -134,10 +149,10 @@ const ProjectTile = (props) => {
             <div id='project-name-and-pic'>
                 <div id='project-tile-name'>
                     {props.name} 
-                    <a href={githubLink} target='_blank' rel='noopener noreferrer'>
+                    {/* <a href={githubLink} target='_blank' rel='noopener noreferrer'>
                         <img src={githubLogo} style={{filter: 'brightness(0%)'}} width={30} />
-                    </a>
-                    <a href={viewLink} target='_blank' rel='noopener noreferrer'>
+                    </a> */}
+                    <a href={viewLink} target='_blank' rel='noopener noreferrer' style={{marginLeft: 10}}>
                         <img src={eyeLogo} width={30} />
                     </a>
                 </div>
