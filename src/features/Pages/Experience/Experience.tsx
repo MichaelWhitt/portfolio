@@ -7,7 +7,7 @@ import resumeIcon from '../../../assets/resumeIcon.png'
 import resumePDF from '../../../assets/Michael-Whitt-Resume-2024.pdf'
 import resumePNG from '../../../assets/michael-whitt-resume-2024.png'
 
-const Experience = (props) => {
+const Experience = (props: any) => {
 
     return(
         <>
