@@ -7,8 +7,8 @@ import faunaLogo from '../../../assets/Fauna_Logo.svg'
 import netlifyLogo from '../../../assets/netlifylogo.png'
 import bootstrapLogo from '../../../assets/bootstraplogo.png'
 import reactspringLogo from '../../../assets/reactspringlogo.png'
-import firebaseLogo from '../../../assets/firebaselogo.png'
-import tailwindLogo from '../../../assets/tailwindlogo.png'
+//import firebaseLogo from '../../../assets/firebaselogo.png'
+//import tailwindLogo from '../../../assets/tailwindlogo.png'
 import eyeLogo from '../../../assets/eye.png'
 import showVid from './showvid.mp4'
 import raidVid from './raidvid.mp4'
@@ -102,7 +102,7 @@ const ProjectTile = (props) => {
                                 <div className='tooltip'>
                                     <span className='tooltiptext'>Tailwind</span>
                                 </div>
-                                <img src={tailwindLogo} width={40} height={30}/>
+                                {/* <img src={tailwindLogo} width={40} height={30}/> */}
                             </div>
                     )
                     : (
@@ -134,7 +134,7 @@ const ProjectTile = (props) => {
                         <div className='tooltip'>
                             <span className='tooltiptext'>Firebase</span>
                         </div>
-                        <img src={firebaseLogo} width={50} height={50}/>
+                        {/* <img src={firebaseLogo} width={50} height={50}/> */}
                     </div>
                 )}
                 {includesReactSpring && (
