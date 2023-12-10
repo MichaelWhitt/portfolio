@@ -27,7 +27,7 @@ const ProjectTile = (props) => {
         case 'Blog Template': 
             src = blogVid
             tools = ['react', 'firebase', 'typescript', 'tailwind']
-            viewLink = 'https://react-blog-template-db.web.app.com'
+            viewLink = 'https://react-blog-template-db.firebaseapp.com/'
             break
         case 'Show Tracker': 
             src = showVid
