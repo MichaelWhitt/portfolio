@@ -227,10 +227,10 @@ body {
 #download-pdf-note {
   position: absolute;
   top: 5px;
-  right: 80px;
+  right: 70px;
   justify-content: center;
   align-items: center;
-  font-size: 10px;
+  font-size: 12px;
   color: #a0d6b4;
 }
 
@@ -239,7 +239,7 @@ body {
     right: 40px;
   }
   #download-pdf-note {
-    right: 30px;
+    right: 20px;
   }
 }
 

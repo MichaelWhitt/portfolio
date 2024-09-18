@@ -4,8 +4,8 @@ import XPContainer from './XPContainer'
 import Animate from '../../AnimateWrapper'
 import xpIcon from '../../../assets/experience.png'
 import resumeIcon from '../../../assets/resumeIcon.png'
-// import resumePDF from '../../../assets/Michael-Whitt-Resume-2024.pdf'
-import resumePNG from '../../../assets/michael-whitt-resume-2024.png'
+//import resumePDF from '../../../assets/Michael-Whitt-2024-Resume-Updated.pdf'
+import resumePNG from '../../../assets/michael-whitt-resume-2024-png.png'
 
 const Experience = (props: any) => {
 
@@ -21,9 +21,9 @@ const Experience = (props: any) => {
             > 
                 <div id='xp-content'>
                     <div id='download-pdf'>
-                        <a href={resumePNG} download='michael-whitt-resume-2024'>
-                            <img src={resumeIcon} width={60} height={60} />
-                            {/* <img src={resumePNG} width={60} height={100} /> */}
+                        <a href={resumePNG} download='michael-whitt-resume-2024-png'>
+                            {/* <img src={resumeIcon} width={60} height={60} /> */}
+                            <img src={resumePNG} width={60} height={80} style={{marginTop: 5}}/>
                         </a>
                     </div>
                     <div id='download-pdf-note'>Download Resume</div>

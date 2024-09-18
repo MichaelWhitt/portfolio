@@ -24,15 +24,15 @@ const ProjectTile = (props) => {
     let githubLink = ''
 
     switch(props.name) {
-        case 'Blog Template': 
+        case 'Terror Den': 
             src = blogVid
             tools = ['react', 'firebase', 'typescript', 'tailwind']
-            viewLink = 'https://react-blog-template-db.firebaseapp.com/'
+            viewLink = 'https://terrorden.com/'
             break
-        case 'Show Tracker': 
+        case 'Movie Conquest': 
             src = showVid
-            tools = ['react', 'redux', 'fauna', 'netlify', 'javascript']
-            viewLink = 'https://mwmovies.netlify.app/'
+            tools = ['react', 'firebase', 'typescript', 'tailwind']
+            viewLink = 'https://movieconquestapp.web.app/'
             break
         case 'Raid Codex':
             src = raidVid

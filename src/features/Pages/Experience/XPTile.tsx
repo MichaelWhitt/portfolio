@@ -4,7 +4,7 @@ import { PageAnimationContext } from '../Stacker'
 
 const XPTile = ({chosen}) => {
     let title = ''
-    let link: string | JSX.Element = ''
+    let link: string | React.ReactElement = ''
     let date = ''
     let description = (
         <ul>
@@ -39,20 +39,21 @@ const XPTile = ({chosen}) => {
         link = <a href='https://www.clearc2.com/' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>{chosen}</a>
         date = 'October 2021 - Present'
         description = animateXPList([
-            'Write performant and maintainable code for ClearC2 CRM Web and Mobile projects and those of our clients, notably a Fortune 500 telecommunications company',
-            'Features I have developed include dynamic recursive tree displays, global toast messaging systems, two-factor authentication, dark mode, excel importing, etc.',
-            'Work with a diverse set of tools that suit project needs such as React, Remix, Javascript, Typescript, Git/Github, Redux, HTML, CSS, Apache Cordova, AG-Grid, and numerous NPM and internal packages',
-            'Create and give brownbag presentations on various topics which have included Git, Code Accessibility, HTMX, and Svelte',
+            'Write performant, safe, and reusable code as a core developer for major Verizon telecom and other C2 CRM projects',
+            'Regularly update project npm dependencies, and implement new epics and features in accordance with Verizon`s and C2`s needs',
+            'Features I have architected and developed include dynamic recursive tree displays, performant tables and charts, toast messaging systems, two-factor authentication, dark mode, excel importing, etc.',
+            'Work with a diverse set of tools that suit project needs such as React, Remix, Javascript, Typescript, Redux + Toolkit, Zustand, Vite, Tailwind, HTML, CSS, Git/Github, Gitlab, Jira, Apache Cordova, and numerous NPM and internal packages such as AG-Grid, XLSX, and more.',
+            'Give brownbag presentations on various topics which have included Git, Voice development, Code Accessibility, HTMX, and Svelte',
             'Have received multiple bonuses for personal contributions'
         ])
     }
 
     if (chosen === 'NuCamp') {
-        title = 'Bootcamp Instructor'
+        title = 'React/Javascript/HTML/CSS Instructor'
         link = <a href='https://www.nucamp.co/' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>{chosen}</a>
         date = 'June 2022 - Present'
         description = animateXPList([
-            'Instruct prospective developers on various topics such as React, Redux, Javascript, HTML, CSS and hosting projects with Firebase',
+            'Instruct prospective developers on various topics such as React, Redux Toolkit, Javascript, HTML, CSS and hosting projects with Firebase',
             'Create additional resources to help students understand more difficult concepts',
             'Help with student projects, provide general guidance and assistance, and code reviews',
             '4.91 / 5 ⭐ (143 reviews)',
