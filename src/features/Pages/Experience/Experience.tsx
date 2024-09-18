@@ -4,8 +4,8 @@ import XPContainer from './XPContainer'
 import Animate from '../../AnimateWrapper'
 import xpIcon from '../../../assets/experience.png'
 import resumeIcon from '../../../assets/resumeIcon.png'
-//import resumePDF from '../../../assets/Michael-Whitt-2024-Resume-Updated.pdf'
-import resumePNG from '../../../assets/michael-whitt-resume-2024-png.png'
+//import resumePDF from '../../../assets/michael-whitt-resume-2024-updated.pdf'
+import resumePNG from '../../../assets/michael-whitt-resume-2024-updated-png.png'
 
 const Experience = (props: any) => {
 
