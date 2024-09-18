@@ -312,8 +312,8 @@ body {
 }
 
 #project-left-sidebar {
-  width: 10%;
-  min-width: 40px;
+  width: 50px;
+  min-width: 50px;
   background: #0A2647;
   height: 100%;
   display: grid;
@@ -333,9 +333,10 @@ body {
 }
 
 #project-pic {
-  width: 100%;
-  height: 95%;
   margin: 5px;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
 }
 
 #contact {

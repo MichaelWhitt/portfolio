@@ -10,9 +10,9 @@ import reactspringLogo from '../../../assets/reactspringlogo.png'
 import firebaseLogo from '../../../assets/firebaselogo.png'
 import tailwindLogo from '../../../assets/tailwindlogo.png'
 import eyeLogo from '../../../assets/eye.png'
-import showVid from './showvid.mp4'
+import mqVid from './mqvid.mp4'
 import raidVid from './raidvid.mp4'
-import blogVid from './rbt.mp4'
+import tdVid from './terrordenvid.mp4'
 import cwlVid from './canwelistenvid.mp4'
 
 
@@ -25,12 +25,12 @@ const ProjectTile = (props) => {
 
     switch(props.name) {
         case 'Terror Den': 
-            src = blogVid
+            src = tdVid
             tools = ['react', 'firebase', 'typescript', 'tailwind']
             viewLink = 'https://terrorden.com/'
             break
         case 'Movie Conquest': 
-            src = showVid
+            src = mqVid
             tools = ['react', 'firebase', 'typescript', 'tailwind']
             viewLink = 'https://movieconquestapp.web.app/'
             break
@@ -160,9 +160,10 @@ const ProjectTile = (props) => {
                     <div id='project-pic'>
                         <video 
                             width={'100%'} 
-                            height={'100%'} 
+                            height={'95%'}
+                            muted
                             src={src}
-                            style={{borderRadius: 12}}
+                            style={{borderRadius: 12, marginTop: 'auto', marginBottom: 'auto'}}
                             onClick={e => e.currentTarget.play()}
                             onMouseOver={e => e.currentTarget.play()}
                             onMouseOut={e => e.currentTarget.pause()}
