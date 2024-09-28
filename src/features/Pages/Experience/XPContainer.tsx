@@ -6,7 +6,7 @@ import Animate from '../../AnimateWrapper'
 import grad from '../../../assets/grad.png'
 import workspace from '../../../assets/workspace.png'
 
-const XPContainer = () => {
+const XPContainer = ({isInUSA}: {isInUSA: boolean}) => {
     const [chosen, setChosen] = useState('ClearC2')
 
     const work = ['ClearC2', 'NuCamp', 'Astraphos', 'Dreamland']
@@ -55,7 +55,7 @@ const XPContainer = () => {
                 </div>
             </div>
             <div id='xp-display'>
-                <XPTile chosen={chosen} />
+                <XPTile chosen={chosen} isInUSA={isInUSA} />
             </div>
         </div>
     )

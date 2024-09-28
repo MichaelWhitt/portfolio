@@ -2,7 +2,7 @@ import Animate from '../../AnimateWrapper'
 import { useContext } from 'react'
 import { PageAnimationContext } from '../Stacker'
 
-const XPTile = ({chosen}) => {
+const XPTile = ({chosen, isInUSA}) => {
     let title = ''
     let link: string | React.ReactElement = ''
     let date = ''
@@ -37,7 +37,7 @@ const XPTile = ({chosen}) => {
     if (chosen === 'ClearC2') {
         title = 'Software Engineer'
         link = <a href='https://www.clearc2.com/' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>{chosen}</a>
-        date = 'October 2021 - Present'
+        date = `October 2021 - ${isInUSA ? 'June 2021' : 'Present'}`
         description = animateXPList([
             'Write performant, safe, and reusable code as a core developer for major Verizon telecom and other C2 CRM projects',
             'Regularly update project npm dependencies, and implement new epics and features in accordance with Verizon`s and C2`s needs',
