@@ -5,23 +5,23 @@ import Animate from '../../AnimateWrapper'
 import xpIcon from '../../../assets/experience.png'
 import resumeIcon from '../../../assets/resumeIcon.png'
 //import resumePDF from '../../../assets/michael-whitt-resume-2024-updated.pdf'
-import euResumePNG from '../../../assets/michael-whitt-resume-2024-updated-png.png'
+//import euResumePNG from '../../../assets/michael-whitt-resume-2024-updated-png.png'
 import usaResumePNG from '../../../assets/michael-whitt-resume-2024-updated-usa-png.png'
-import { hasUSAIP } from '../../../utils/utils'
-import { useEffect, useState } from 'react'
+//import { hasUSAIP } from '../../../utils/utils'
+import { useState } from 'react'
 
 const Experience = (props: any) => {
-    const [userIsInUSA, setUserIsInUSA] = useState(true)
+    //const [userIsInUSA, setUserIsInUSA] = useState(true)
 
-    useEffect(() => {
-        const isUserInUSA = async () => {
-            const isInUSA = await hasUSAIP()
-            if (!isInUSA) {
-                setUserIsInUSA(false)
-            }
-        }
-        isUserInUSA()
-    }, [])
+    // useEffect(() => {
+    //     const isUserInUSA = async () => {
+    //         const isInUSA = await hasUSAIP()
+    //         if (!isInUSA) {
+    //             setUserIsInUSA(false)
+    //         }
+    //     }
+    //     isUserInUSA()
+    // }, [])
 
 
     return(
@@ -36,9 +36,9 @@ const Experience = (props: any) => {
             > 
                 <div id='xp-content'>
                     <div id='download-pdf'>
-                        <a href={userIsInUSA ? usaResumePNG : euResumePNG} download='michael-whitt-resume-2024-png'>
+                        <a href={usaResumePNG} download='michael-whitt-resume-2024-png'>
                             {/* <img src={resumeIcon} width={60} height={60} /> */}
-                            <img src={userIsInUSA ? usaResumePNG : euResumePNG} width={60} height={80} style={{marginTop: 5}}/>
+                            <img src={usaResumePNG} width={60} height={80} style={{marginTop: 5}}/>
                         </a>
                     </div>
                     <div id='download-pdf-note'>Download Resume</div>
@@ -55,7 +55,7 @@ const Experience = (props: any) => {
                         to={{x: 0}} 
                         style={{height: 2, width: 100, borderTop: '1px solid #a0d6b4', position: 'absolute', left: '6%', top: 25}} 
                     />
-                    <XPContainer isInUSA={userIsInUSA} />
+                    <XPContainer isInUSA />
                 </div>
                 <div 
                     className='edgeContainer bg-blue' 
