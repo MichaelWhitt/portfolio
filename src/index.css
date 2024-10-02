@@ -332,8 +332,8 @@ body {
   display: flex;
 }
 
-#project-pic {
-  margin: 5px;
+#project-vid {
+  max-width: 400px;
   justify-content: center;
   display: flex;
   margin: 0 auto;

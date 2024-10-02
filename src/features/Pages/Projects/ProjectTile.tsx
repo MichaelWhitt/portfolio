@@ -11,7 +11,7 @@ import firebaseLogo from '../../../assets/firebaselogo.png'
 import tailwindLogo from '../../../assets/tailwindlogo.png'
 import eyeLogo from '../../../assets/eye.png'
 import mqVid from './mqvid.mp4'
-import raidVid from './raidvid.mp4'
+import jtrackervid from './jtrackervid.mp4'
 import tdVid from './terrordenvid.mp4'
 import cwlVid from './canwelistenvid.mp4'
 
@@ -24,6 +24,11 @@ const ProjectTile = (props) => {
     let githubLink = ''
 
     switch(props.name) {
+        case 'Job Tracker':
+            src = jtrackervid
+            tools = ['react', 'firebase', 'typescript', 'tailwind']
+            viewLink = 'https://jtracker-823e4.firebaseapp.com/'
+            break
         case 'Terror Den': 
             src = tdVid
             tools = ['react', 'firebase', 'typescript', 'tailwind']
@@ -33,11 +38,6 @@ const ProjectTile = (props) => {
             src = mqVid
             tools = ['react', 'firebase', 'typescript', 'tailwind']
             viewLink = 'https://movieconquestapp.web.app/'
-            break
-        case 'Raid Codex':
-            src = raidVid
-            tools = ['react', 'fauna', 'netlify', 'javascript']
-            viewLink = 'https://rsl-codex.netlify.app/'
             break
         case 'Can We Listen?':
             src = cwlVid
@@ -157,18 +157,23 @@ const ProjectTile = (props) => {
                     </a>
                 </div>
                 <div id='project-tile-inner'>
-                    <div id='project-pic'>
-                        <video 
-                            width={'100%'} 
-                            height={'95%'}
-                            muted
-                            src={src}
-                            style={{borderRadius: 12, marginTop: 'auto', marginBottom: 'auto'}}
-                            onClick={e => e.currentTarget.play()}
-                            onMouseOver={e => e.currentTarget.play()}
-                            onMouseOut={e => e.currentTarget.pause()}
+                    <div id='project-vid'>
+                    <video
+                        muted
+                        src={src}
+                        style={{
+                            borderRadius: 12,
+                            width: '100%',  /* Always takes up full width of parent */
+                            height: '100%', /* Always takes up full height of parent */
+                            objectFit: 'cover' /* Ensures the video covers the area without distortion */
+                        }}
+                        onClick={e => e.currentTarget.play()}
+                        onMouseOver={e => e.currentTarget.play()}
+                        onMouseOut={e => e.currentTarget.pause()}
                         />
+
                     </div>
+                    
                 </div>
             </div>
         </div>
