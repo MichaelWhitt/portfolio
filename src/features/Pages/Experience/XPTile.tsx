@@ -37,13 +37,13 @@ const XPTile = ({chosen, isInUSA}) => {
     if (chosen === 'ClearC2') {
         title = 'Software Engineer'
         link = <a href='https://www.clearc2.com/' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>{chosen}</a>
-        date = `October 2021 - ${isInUSA ? 'June 2021' : 'Present'}`
+        date = `October 2021 - ${isInUSA ? 'June 2024' : 'Present'}`
         description = animateXPList([
-            'Write performant, safe, and accessible code as a core developer for major Verizon telecom and other C2 CRM projects',
+            'Contributed 2,500+ commits using performant, safe, and accessible code as a core developer on major Verizon telecom and other C2 CRM projects',
             'Regularly update project npm dependencies, and implement new epics and features in accordance with Verizon`s and C2`s needs',
-            'Features I have architected and developed include dynamic recursive tree displays, performant tables and charts, toast messaging systems, two-factor authentication, dark mode, excel importing, etc.',
-            'Work with a diverse set of tools that suit project needs such as React, Remix, Javascript, Typescript, Redux + Toolkit, Zustand, Vite, Tailwind, HTML, CSS, Git/Github, Gitlab, Jira, Apache Cordova, and numerous NPM and internal packages such as AG-Grid, XLSX, and more.',
-            'Give brownbag presentations on various topics which have included Git, Voice development, Code Accessibility, HTMX, and Svelte',
+            'Architected and developed node tree displays, performant tables and charts, toast messaging systems, two-factor authentication, dark mode, excel importing, etc.',
+            'Worked with a diverse set of tools that suit project needs such as React, Remix, Javascript, Typescript, Redux + Toolkit, Zustand, Vite, Tailwind, HTML, CSS, Git/Github, Gitlab, Jira, Apache Cordova, and numerous NPM and internal packages such as AG-Grid, XLSX, and more.',
+            'Gave brownbag presentations on various topics which have included Git, Voice development, Code Accessibility, HTMX, and Svelte',
             'Have received multiple bonuses for personal contributions'
         ])
     }
