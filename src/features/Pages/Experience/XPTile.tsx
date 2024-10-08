@@ -39,7 +39,7 @@ const XPTile = ({chosen, isInUSA}) => {
         link = <a href='https://www.clearc2.com/' target='_blank' rel="noopener noreferrer" style={{color: '#a0d6b4'}}>{chosen}</a>
         date = `October 2021 - ${isInUSA ? 'June 2021' : 'Present'}`
         description = animateXPList([
-            'Write performant, safe, and reusable code as a core developer for major Verizon telecom and other C2 CRM projects',
+            'Write performant, safe, and accessible code as a core developer for major Verizon telecom and other C2 CRM projects',
             'Regularly update project npm dependencies, and implement new epics and features in accordance with Verizon`s and C2`s needs',
             'Features I have architected and developed include dynamic recursive tree displays, performant tables and charts, toast messaging systems, two-factor authentication, dark mode, excel importing, etc.',
             'Work with a diverse set of tools that suit project needs such as React, Remix, Javascript, Typescript, Redux + Toolkit, Zustand, Vite, Tailwind, HTML, CSS, Git/Github, Gitlab, Jira, Apache Cordova, and numerous NPM and internal packages such as AG-Grid, XLSX, and more.',
