@@ -3,9 +3,9 @@ import './index.css'
 import {
   createBrowserRouter,
   RouterProvider
-} from "react-router-dom";
+} from "react-router-dom"
 
-import Stacker from './features/Pages/Stacker';
+import Stacker from './features/Pages/Stacker'
 
 const router = createBrowserRouter([
   {
